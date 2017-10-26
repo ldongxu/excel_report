@@ -71,7 +71,7 @@ public class ExcelUtil {
      * @return voList
      * @throws RuntimeException
      */
-    public static <T> Collection<T> importExcel(Class<T> clazz, InputStream inputStream,
+    public static <T> Collection<T> importExcel(Class<T> clazz,int sheetIndex, InputStream inputStream,
                                                 String pattern, ExcelLogs logs, Integer... arrayCount) {
 
         Workbook workBook = null;
@@ -81,7 +81,8 @@ public class ExcelUtil {
             LG.error(e.toString(), e);
         }
         List<T> list = new ArrayList<>();
-        Sheet sheet = workBook.getSheetAt(0);
+        Sheet sheet = workBook.getSheetAt(sheetIndex);
+        System.out.println(sheet.getSheetName());
         Iterator<Row> rowIterator = sheet.rowIterator();
         try {
             List<ExcelLog> logList = new ArrayList<>();

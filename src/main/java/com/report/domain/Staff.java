@@ -32,7 +32,7 @@ public class Staff extends BaseBean{
     @ExcelCell(index = 12)
     private Double conditionOfficeRanking;//基础条件处室排名
     @ExcelCell(index = 13)
-    private Integer abilityScore;//基础能力总分
+    private Double abilityScore;//基础能力总分
     @ExcelCell(index = 14)
     private Double abilityDepartmentRanking;//基础能力部门内排名
     @ExcelCell(index = 15)
@@ -46,127 +46,127 @@ public class Staff extends BaseBean{
     @ExcelCell(index = 19)
     private Double potentialLevel;//潜质等级
     @ExcelCell(index = 20)
-    private Integer potentialScore;//潜质总分
+    private Double potentialScore;//潜质总分
     @ExcelCell(index = 21)
     private Double potentialDepartmentRanking;//潜质部门内排名
     @ExcelCell(index = 22)
     private Double potentialOfficeRanking;//潜质处室内排名
     @ExcelCell(index = 23)
-    private Integer interval;//总区间
+    private Double interval;//总区间
     @ExcelCell(index = 24)
-    private Integer jingye;//敬业
+    private Double jingye;//敬业
     @ExcelCell(index = 25)
-    private Integer jingyeyoushibiaoji;
+    private Double jingyeyoushibiaoji;
     @ExcelCell(index = 26)
-    private Integer jingyedaifazhanbiaoji;
+    private Double jingyedaifazhanbiaoji;
     @ExcelCell(index = 27)
-    private Integer jingyea;
+    private Double jingyea;
     @ExcelCell(index = 28)
-    private Integer jingyeb;
+    private Double jingyeb;
     @ExcelCell(index = 29)
-    private Integer jingyec;
+    private Double jingyec;
     @ExcelCell(index = 30)
-    private Integer jingyed;
+    private Double jingyed;
     @ExcelCell(index = 31)
-    private Integer zhixing;
+    private Double zhixing;
     @ExcelCell(index = 32)
-    private Integer zhixingyoushibiaoji;
+    private Double zhixingyoushibiaoji;
     @ExcelCell(index = 33)
-    private Integer zhixingdaifazhanbiaoji;
+    private Double zhixingdaifazhanbiaoji;
     @ExcelCell(index = 34)
-    private Integer zhixinga;
+    private Double zhixinga;
     @ExcelCell(index = 35)
-    private Integer zhixingb;
+    private Double zhixingb;
     @ExcelCell(index = 36)
-    private Integer zhixingc;
+    private Double zhixingc;
     @ExcelCell(index = 37)
-    private Integer zhixingd;
+    private Double zhixingd;
     @ExcelCell(index = 38)
-    private Integer kehudaoxiang;
+    private Double kehudaoxiang;
     @ExcelCell(index = 39)
-    private Integer kehudaoxiangysbj;
+    private Double kehudaoxiangysbj;
     @ExcelCell(index = 40)
-    private Integer kehudaoxiangdfzbj;
+    private Double kehudaoxiangdfzbj;
     @ExcelCell(index = 41)
-    private Integer kehudaoxianga;
+    private Double kehudaoxianga;
     @ExcelCell(index = 42)
-    private Integer kehudaoxiangb;
+    private Double kehudaoxiangb;
     @ExcelCell(index = 43)
-    private Integer kehudaoxiangc;
+    private Double kehudaoxiangc;
     @ExcelCell(index = 44)
-    private Integer kehudaoxiangd;
+    private Double kehudaoxiangd;
     @ExcelCell(index = 45)
-    private Integer zhiduyishi;
+    private Double zhiduyishi;
     @ExcelCell(index = 46)
-    private Integer zhiduyishiyoushibiaoji;
+    private Double zhiduyishiyoushibiaoji;
     @ExcelCell(index = 47)
-    private Integer zhiduyishidaifazhanbiaoji;
+    private Double zhiduyishidaifazhanbiaoji;
     @ExcelCell(index = 48)
-    private Integer zhiduyishia;
+    private Double zhiduyishia;
     @ExcelCell(index = 49)
-    private Integer zhiduyishib;
+    private Double zhiduyishib;
     @ExcelCell(index = 50)
-    private Integer zhiduyishic;
+    private Double zhiduyishic;
     @ExcelCell(index = 51)
-    private Integer zhiduyishid;
+    private Double zhiduyishid;
     @ExcelCell(index = 52)
-    private Integer jixiaodaoxiang;
+    private Double jixiaodaoxiang;
     @ExcelCell(index = 53)
-    private Integer jixiaodaoxiangyoushibiaoji;
+    private Double jixiaodaoxiangyoushibiaoji;
     @ExcelCell(index = 54)
-    private Integer jixiaodaoxiangdaifazhanbiaoji;
+    private Double jixiaodaoxiangdaifazhanbiaoji;
     @ExcelCell(index = 55)
-    private Integer jixiaodaoxianga;
+    private Double jixiaodaoxianga;
     @ExcelCell(index = 56)
-    private Integer jixiaodaoxiangb;
+    private Double jixiaodaoxiangb;
     @ExcelCell(index = 57)
-    private Integer jixiaodaoxiangc;
+    private Double jixiaodaoxiangc;
     @ExcelCell(index = 58)
-    private Integer jixiaodaoxiangd;
+    private Double jixiaodaoxiangd;
     @ExcelCell(index = 59)
-    private Integer guanxijianli;
+    private Double guanxijianli;
     @ExcelCell(index = 60)
-    private Integer guanxijianliyoushibiaoji;
+    private Double guanxijianliyoushibiaoji;
     @ExcelCell(index = 61)
-    private Integer guanxijianlidaifazhanbiaoji;
+    private Double guanxijianlidaifazhanbiaoji;
     @ExcelCell(index = 62)
-    private Integer guanxijianlia;
+    private Double guanxijianlia;
     @ExcelCell(index = 63)
-    private Integer guanxijianlib;
+    private Double guanxijianlib;
     @ExcelCell(index = 64)
-    private Integer guanxijianlic;
+    private Double guanxijianlic;
     @ExcelCell(index = 65)
-    private Integer guanxijianlid;
+    private Double guanxijianlid;
     @ExcelCell(index = 66)
-    private Integer ziyuanzhenghe;
+    private Double ziyuanzhenghe;
     @ExcelCell(index = 67)
-    private Integer ziyuanzhengheyoushibiaoji;
+    private Double ziyuanzhengheyoushibiaoji;
     @ExcelCell(index = 68)
-    private Integer ziyuanzhenghedaifazhanbiaoji;
+    private Double ziyuanzhenghedaifazhanbiaoji;
     @ExcelCell(index = 69)
-    private Integer ziyuanzhenghea;
+    private Double ziyuanzhenghea;
     @ExcelCell(index = 70)
-    private Integer ziyuanzhengheb;
+    private Double ziyuanzhengheb;
     @ExcelCell(index = 71)
-    private Integer ziyuanzhenghec;
+    private Double ziyuanzhenghec;
     @ExcelCell(index = 72)
-    private Integer ziyuanzhenghed;
+    private Double ziyuanzhenghed;
     @ExcelCell(index = 73)
-    private Integer xingdongli;
+    private Double xingdongli;
     @ExcelCell(index = 74)
-    private Integer xingdongliyoushibiaoji;
+    private Double xingdongliyoushibiaoji;
     @ExcelCell(index = 75)
-    private Integer xingdonglidaifazhanbiaoji;
+    private Double xingdonglidaifazhanbiaoji;
     @ExcelCell(index = 76)
-    private Integer xingdonglia;
+    private Double xingdonglia;
     @ExcelCell(index = 77)
-    private Integer xingdonglib;
+    private Double xingdonglib;
     @ExcelCell(index = 78)
-    private Integer xingdonglic;
+    private Double xingdonglic;
     @ExcelCell(index = 79)
-    private Integer xingdonglid;
+    private Double xingdonglid;
     @ExcelCell(index = 80)
-    private Integer shengrenliScore;
+    private Double shengrenliScore;
     @ExcelCell(index = 81)
     private Double shengrenliDepartmentRanking;
     @ExcelCell(index = 82)
@@ -268,11 +268,11 @@ public class Staff extends BaseBean{
         this.conditionOfficeRanking = conditionOfficeRanking;
     }
 
-    public Integer getAbilityScore() {
+    public Double getAbilityScore() {
         return abilityScore;
     }
 
-    public void setAbilityScore(Integer abilityScore) {
+    public void setAbilityScore(Double abilityScore) {
         this.abilityScore = abilityScore;
     }
 
@@ -324,11 +324,11 @@ public class Staff extends BaseBean{
         this.potentialLevel = potentialLevel;
     }
 
-    public Integer getPotentialScore() {
+    public Double getPotentialScore() {
         return potentialScore;
     }
 
-    public void setPotentialScore(Integer potentialScore) {
+    public void setPotentialScore(Double potentialScore) {
         this.potentialScore = potentialScore;
     }
 
@@ -348,467 +348,467 @@ public class Staff extends BaseBean{
         this.potentialOfficeRanking = potentialOfficeRanking;
     }
 
-    public Integer getInterval() {
+    public Double getInterval() {
         return interval;
     }
 
-    public void setInterval(Integer interval) {
+    public void setInterval(Double interval) {
         this.interval = interval;
     }
 
-    public Integer getJingye() {
+    public Double getJingye() {
         return jingye;
     }
 
-    public void setJingye(Integer jingye) {
+    public void setJingye(Double jingye) {
         this.jingye = jingye;
     }
 
-    public Integer getJingyeyoushibiaoji() {
+    public Double getJingyeyoushibiaoji() {
         return jingyeyoushibiaoji;
     }
 
-    public void setJingyeyoushibiaoji(Integer jingyeyoushibiaoji) {
+    public void setJingyeyoushibiaoji(Double jingyeyoushibiaoji) {
         this.jingyeyoushibiaoji = jingyeyoushibiaoji;
     }
 
-    public Integer getJingyedaifazhanbiaoji() {
+    public Double getJingyedaifazhanbiaoji() {
         return jingyedaifazhanbiaoji;
     }
 
-    public void setJingyedaifazhanbiaoji(Integer jingyedaifazhanbiaoji) {
+    public void setJingyedaifazhanbiaoji(Double jingyedaifazhanbiaoji) {
         this.jingyedaifazhanbiaoji = jingyedaifazhanbiaoji;
     }
 
-    public Integer getJingyea() {
+    public Double getJingyea() {
         return jingyea;
     }
 
-    public void setJingyea(Integer jingyea) {
+    public void setJingyea(Double jingyea) {
         this.jingyea = jingyea;
     }
 
-    public Integer getJingyeb() {
+    public Double getJingyeb() {
         return jingyeb;
     }
 
-    public void setJingyeb(Integer jingyeb) {
+    public void setJingyeb(Double jingyeb) {
         this.jingyeb = jingyeb;
     }
 
-    public Integer getJingyec() {
+    public Double getJingyec() {
         return jingyec;
     }
 
-    public void setJingyec(Integer jingyec) {
+    public void setJingyec(Double jingyec) {
         this.jingyec = jingyec;
     }
 
-    public Integer getJingyed() {
+    public Double getJingyed() {
         return jingyed;
     }
 
-    public void setJingyed(Integer jingyed) {
+    public void setJingyed(Double jingyed) {
         this.jingyed = jingyed;
     }
 
-    public Integer getZhixing() {
+    public Double getZhixing() {
         return zhixing;
     }
 
-    public void setZhixing(Integer zhixing) {
+    public void setZhixing(Double zhixing) {
         this.zhixing = zhixing;
     }
 
-    public Integer getZhixingyoushibiaoji() {
+    public Double getZhixingyoushibiaoji() {
         return zhixingyoushibiaoji;
     }
 
-    public void setZhixingyoushibiaoji(Integer zhixingyoushibiaoji) {
+    public void setZhixingyoushibiaoji(Double zhixingyoushibiaoji) {
         this.zhixingyoushibiaoji = zhixingyoushibiaoji;
     }
 
-    public Integer getZhixingdaifazhanbiaoji() {
+    public Double getZhixingdaifazhanbiaoji() {
         return zhixingdaifazhanbiaoji;
     }
 
-    public void setZhixingdaifazhanbiaoji(Integer zhixingdaifazhanbiaoji) {
+    public void setZhixingdaifazhanbiaoji(Double zhixingdaifazhanbiaoji) {
         this.zhixingdaifazhanbiaoji = zhixingdaifazhanbiaoji;
     }
 
-    public Integer getZhixinga() {
+    public Double getZhixinga() {
         return zhixinga;
     }
 
-    public void setZhixinga(Integer zhixinga) {
+    public void setZhixinga(Double zhixinga) {
         this.zhixinga = zhixinga;
     }
 
-    public Integer getZhixingb() {
+    public Double getZhixingb() {
         return zhixingb;
     }
 
-    public void setZhixingb(Integer zhixingb) {
+    public void setZhixingb(Double zhixingb) {
         this.zhixingb = zhixingb;
     }
 
-    public Integer getZhixingc() {
+    public Double getZhixingc() {
         return zhixingc;
     }
 
-    public void setZhixingc(Integer zhixingc) {
+    public void setZhixingc(Double zhixingc) {
         this.zhixingc = zhixingc;
     }
 
-    public Integer getZhixingd() {
+    public Double getZhixingd() {
         return zhixingd;
     }
 
-    public void setZhixingd(Integer zhixingd) {
+    public void setZhixingd(Double zhixingd) {
         this.zhixingd = zhixingd;
     }
 
-    public Integer getKehudaoxiang() {
+    public Double getKehudaoxiang() {
         return kehudaoxiang;
     }
 
-    public void setKehudaoxiang(Integer kehudaoxiang) {
+    public void setKehudaoxiang(Double kehudaoxiang) {
         this.kehudaoxiang = kehudaoxiang;
     }
 
-    public Integer getKehudaoxiangysbj() {
+    public Double getKehudaoxiangysbj() {
         return kehudaoxiangysbj;
     }
 
-    public void setKehudaoxiangysbj(Integer kehudaoxiangysbj) {
+    public void setKehudaoxiangysbj(Double kehudaoxiangysbj) {
         this.kehudaoxiangysbj = kehudaoxiangysbj;
     }
 
-    public Integer getKehudaoxiangdfzbj() {
+    public Double getKehudaoxiangdfzbj() {
         return kehudaoxiangdfzbj;
     }
 
-    public void setKehudaoxiangdfzbj(Integer kehudaoxiangdfzbj) {
+    public void setKehudaoxiangdfzbj(Double kehudaoxiangdfzbj) {
         this.kehudaoxiangdfzbj = kehudaoxiangdfzbj;
     }
 
-    public Integer getKehudaoxianga() {
+    public Double getKehudaoxianga() {
         return kehudaoxianga;
     }
 
-    public void setKehudaoxianga(Integer kehudaoxianga) {
+    public void setKehudaoxianga(Double kehudaoxianga) {
         this.kehudaoxianga = kehudaoxianga;
     }
 
-    public Integer getKehudaoxiangb() {
+    public Double getKehudaoxiangb() {
         return kehudaoxiangb;
     }
 
-    public void setKehudaoxiangb(Integer kehudaoxiangb) {
+    public void setKehudaoxiangb(Double kehudaoxiangb) {
         this.kehudaoxiangb = kehudaoxiangb;
     }
 
-    public Integer getKehudaoxiangc() {
+    public Double getKehudaoxiangc() {
         return kehudaoxiangc;
     }
 
-    public void setKehudaoxiangc(Integer kehudaoxiangc) {
+    public void setKehudaoxiangc(Double kehudaoxiangc) {
         this.kehudaoxiangc = kehudaoxiangc;
     }
 
-    public Integer getKehudaoxiangd() {
+    public Double getKehudaoxiangd() {
         return kehudaoxiangd;
     }
 
-    public void setKehudaoxiangd(Integer kehudaoxiangd) {
+    public void setKehudaoxiangd(Double kehudaoxiangd) {
         this.kehudaoxiangd = kehudaoxiangd;
     }
 
-    public Integer getZhiduyishi() {
+    public Double getZhiduyishi() {
         return zhiduyishi;
     }
 
-    public void setZhiduyishi(Integer zhiduyishi) {
+    public void setZhiduyishi(Double zhiduyishi) {
         this.zhiduyishi = zhiduyishi;
     }
 
-    public Integer getZhiduyishiyoushibiaoji() {
+    public Double getZhiduyishiyoushibiaoji() {
         return zhiduyishiyoushibiaoji;
     }
 
-    public void setZhiduyishiyoushibiaoji(Integer zhiduyishiyoushibiaoji) {
+    public void setZhiduyishiyoushibiaoji(Double zhiduyishiyoushibiaoji) {
         this.zhiduyishiyoushibiaoji = zhiduyishiyoushibiaoji;
     }
 
-    public Integer getZhiduyishidaifazhanbiaoji() {
+    public Double getZhiduyishidaifazhanbiaoji() {
         return zhiduyishidaifazhanbiaoji;
     }
 
-    public void setZhiduyishidaifazhanbiaoji(Integer zhiduyishidaifazhanbiaoji) {
+    public void setZhiduyishidaifazhanbiaoji(Double zhiduyishidaifazhanbiaoji) {
         this.zhiduyishidaifazhanbiaoji = zhiduyishidaifazhanbiaoji;
     }
 
-    public Integer getZhiduyishia() {
+    public Double getZhiduyishia() {
         return zhiduyishia;
     }
 
-    public void setZhiduyishia(Integer zhiduyishia) {
+    public void setZhiduyishia(Double zhiduyishia) {
         this.zhiduyishia = zhiduyishia;
     }
 
-    public Integer getZhiduyishib() {
+    public Double getZhiduyishib() {
         return zhiduyishib;
     }
 
-    public void setZhiduyishib(Integer zhiduyishib) {
+    public void setZhiduyishib(Double zhiduyishib) {
         this.zhiduyishib = zhiduyishib;
     }
 
-    public Integer getZhiduyishic() {
+    public Double getZhiduyishic() {
         return zhiduyishic;
     }
 
-    public void setZhiduyishic(Integer zhiduyishic) {
+    public void setZhiduyishic(Double zhiduyishic) {
         this.zhiduyishic = zhiduyishic;
     }
 
-    public Integer getZhiduyishid() {
+    public Double getZhiduyishid() {
         return zhiduyishid;
     }
 
-    public void setZhiduyishid(Integer zhiduyishid) {
+    public void setZhiduyishid(Double zhiduyishid) {
         this.zhiduyishid = zhiduyishid;
     }
 
-    public Integer getJixiaodaoxiang() {
+    public Double getJixiaodaoxiang() {
         return jixiaodaoxiang;
     }
 
-    public void setJixiaodaoxiang(Integer jixiaodaoxiang) {
+    public void setJixiaodaoxiang(Double jixiaodaoxiang) {
         this.jixiaodaoxiang = jixiaodaoxiang;
     }
 
-    public Integer getJixiaodaoxiangyoushibiaoji() {
+    public Double getJixiaodaoxiangyoushibiaoji() {
         return jixiaodaoxiangyoushibiaoji;
     }
 
-    public void setJixiaodaoxiangyoushibiaoji(Integer jixiaodaoxiangyoushibiaoji) {
+    public void setJixiaodaoxiangyoushibiaoji(Double jixiaodaoxiangyoushibiaoji) {
         this.jixiaodaoxiangyoushibiaoji = jixiaodaoxiangyoushibiaoji;
     }
 
-    public Integer getJixiaodaoxiangdaifazhanbiaoji() {
+    public Double getJixiaodaoxiangdaifazhanbiaoji() {
         return jixiaodaoxiangdaifazhanbiaoji;
     }
 
-    public void setJixiaodaoxiangdaifazhanbiaoji(Integer jixiaodaoxiangdaifazhanbiaoji) {
+    public void setJixiaodaoxiangdaifazhanbiaoji(Double jixiaodaoxiangdaifazhanbiaoji) {
         this.jixiaodaoxiangdaifazhanbiaoji = jixiaodaoxiangdaifazhanbiaoji;
     }
 
-    public Integer getJixiaodaoxianga() {
+    public Double getJixiaodaoxianga() {
         return jixiaodaoxianga;
     }
 
-    public void setJixiaodaoxianga(Integer jixiaodaoxianga) {
+    public void setJixiaodaoxianga(Double jixiaodaoxianga) {
         this.jixiaodaoxianga = jixiaodaoxianga;
     }
 
-    public Integer getJixiaodaoxiangb() {
+    public Double getJixiaodaoxiangb() {
         return jixiaodaoxiangb;
     }
 
-    public void setJixiaodaoxiangb(Integer jixiaodaoxiangb) {
+    public void setJixiaodaoxiangb(Double jixiaodaoxiangb) {
         this.jixiaodaoxiangb = jixiaodaoxiangb;
     }
 
-    public Integer getJixiaodaoxiangc() {
+    public Double getJixiaodaoxiangc() {
         return jixiaodaoxiangc;
     }
 
-    public void setJixiaodaoxiangc(Integer jixiaodaoxiangc) {
+    public void setJixiaodaoxiangc(Double jixiaodaoxiangc) {
         this.jixiaodaoxiangc = jixiaodaoxiangc;
     }
 
-    public Integer getJixiaodaoxiangd() {
+    public Double getJixiaodaoxiangd() {
         return jixiaodaoxiangd;
     }
 
-    public void setJixiaodaoxiangd(Integer jixiaodaoxiangd) {
+    public void setJixiaodaoxiangd(Double jixiaodaoxiangd) {
         this.jixiaodaoxiangd = jixiaodaoxiangd;
     }
 
-    public Integer getGuanxijianli() {
+    public Double getGuanxijianli() {
         return guanxijianli;
     }
 
-    public void setGuanxijianli(Integer guanxijianli) {
+    public void setGuanxijianli(Double guanxijianli) {
         this.guanxijianli = guanxijianli;
     }
 
-    public Integer getGuanxijianliyoushibiaoji() {
+    public Double getGuanxijianliyoushibiaoji() {
         return guanxijianliyoushibiaoji;
     }
 
-    public void setGuanxijianliyoushibiaoji(Integer guanxijianliyoushibiaoji) {
+    public void setGuanxijianliyoushibiaoji(Double guanxijianliyoushibiaoji) {
         this.guanxijianliyoushibiaoji = guanxijianliyoushibiaoji;
     }
 
-    public Integer getGuanxijianlidaifazhanbiaoji() {
+    public Double getGuanxijianlidaifazhanbiaoji() {
         return guanxijianlidaifazhanbiaoji;
     }
 
-    public void setGuanxijianlidaifazhanbiaoji(Integer guanxijianlidaifazhanbiaoji) {
+    public void setGuanxijianlidaifazhanbiaoji(Double guanxijianlidaifazhanbiaoji) {
         this.guanxijianlidaifazhanbiaoji = guanxijianlidaifazhanbiaoji;
     }
 
-    public Integer getGuanxijianlia() {
+    public Double getGuanxijianlia() {
         return guanxijianlia;
     }
 
-    public void setGuanxijianlia(Integer guanxijianlia) {
+    public void setGuanxijianlia(Double guanxijianlia) {
         this.guanxijianlia = guanxijianlia;
     }
 
-    public Integer getGuanxijianlib() {
+    public Double getGuanxijianlib() {
         return guanxijianlib;
     }
 
-    public void setGuanxijianlib(Integer guanxijianlib) {
+    public void setGuanxijianlib(Double guanxijianlib) {
         this.guanxijianlib = guanxijianlib;
     }
 
-    public Integer getGuanxijianlic() {
+    public Double getGuanxijianlic() {
         return guanxijianlic;
     }
 
-    public void setGuanxijianlic(Integer guanxijianlic) {
+    public void setGuanxijianlic(Double guanxijianlic) {
         this.guanxijianlic = guanxijianlic;
     }
 
-    public Integer getGuanxijianlid() {
+    public Double getGuanxijianlid() {
         return guanxijianlid;
     }
 
-    public void setGuanxijianlid(Integer guanxijianlid) {
+    public void setGuanxijianlid(Double guanxijianlid) {
         this.guanxijianlid = guanxijianlid;
     }
 
-    public Integer getZiyuanzhenghe() {
+    public Double getZiyuanzhenghe() {
         return ziyuanzhenghe;
     }
 
-    public void setZiyuanzhenghe(Integer ziyuanzhenghe) {
+    public void setZiyuanzhenghe(Double ziyuanzhenghe) {
         this.ziyuanzhenghe = ziyuanzhenghe;
     }
 
-    public Integer getZiyuanzhengheyoushibiaoji() {
+    public Double getZiyuanzhengheyoushibiaoji() {
         return ziyuanzhengheyoushibiaoji;
     }
 
-    public void setZiyuanzhengheyoushibiaoji(Integer ziyuanzhengheyoushibiaoji) {
+    public void setZiyuanzhengheyoushibiaoji(Double ziyuanzhengheyoushibiaoji) {
         this.ziyuanzhengheyoushibiaoji = ziyuanzhengheyoushibiaoji;
     }
 
-    public Integer getZiyuanzhenghedaifazhanbiaoji() {
+    public Double getZiyuanzhenghedaifazhanbiaoji() {
         return ziyuanzhenghedaifazhanbiaoji;
     }
 
-    public void setZiyuanzhenghedaifazhanbiaoji(Integer ziyuanzhenghedaifazhanbiaoji) {
+    public void setZiyuanzhenghedaifazhanbiaoji(Double ziyuanzhenghedaifazhanbiaoji) {
         this.ziyuanzhenghedaifazhanbiaoji = ziyuanzhenghedaifazhanbiaoji;
     }
 
-    public Integer getZiyuanzhenghea() {
+    public Double getZiyuanzhenghea() {
         return ziyuanzhenghea;
     }
 
-    public void setZiyuanzhenghea(Integer ziyuanzhenghea) {
+    public void setZiyuanzhenghea(Double ziyuanzhenghea) {
         this.ziyuanzhenghea = ziyuanzhenghea;
     }
 
-    public Integer getZiyuanzhengheb() {
+    public Double getZiyuanzhengheb() {
         return ziyuanzhengheb;
     }
 
-    public void setZiyuanzhengheb(Integer ziyuanzhengheb) {
+    public void setZiyuanzhengheb(Double ziyuanzhengheb) {
         this.ziyuanzhengheb = ziyuanzhengheb;
     }
 
-    public Integer getZiyuanzhenghec() {
+    public Double getZiyuanzhenghec() {
         return ziyuanzhenghec;
     }
 
-    public void setZiyuanzhenghec(Integer ziyuanzhenghec) {
+    public void setZiyuanzhenghec(Double ziyuanzhenghec) {
         this.ziyuanzhenghec = ziyuanzhenghec;
     }
 
-    public Integer getZiyuanzhenghed() {
+    public Double getZiyuanzhenghed() {
         return ziyuanzhenghed;
     }
 
-    public void setZiyuanzhenghed(Integer ziyuanzhenghed) {
+    public void setZiyuanzhenghed(Double ziyuanzhenghed) {
         this.ziyuanzhenghed = ziyuanzhenghed;
     }
 
-    public Integer getXingdongli() {
+    public Double getXingdongli() {
         return xingdongli;
     }
 
-    public void setXingdongli(Integer xingdongli) {
+    public void setXingdongli(Double xingdongli) {
         this.xingdongli = xingdongli;
     }
 
-    public Integer getXingdongliyoushibiaoji() {
+    public Double getXingdongliyoushibiaoji() {
         return xingdongliyoushibiaoji;
     }
 
-    public void setXingdongliyoushibiaoji(Integer xingdongliyoushibiaoji) {
+    public void setXingdongliyoushibiaoji(Double xingdongliyoushibiaoji) {
         this.xingdongliyoushibiaoji = xingdongliyoushibiaoji;
     }
 
-    public Integer getXingdonglidaifazhanbiaoji() {
+    public Double getXingdonglidaifazhanbiaoji() {
         return xingdonglidaifazhanbiaoji;
     }
 
-    public void setXingdonglidaifazhanbiaoji(Integer xingdonglidaifazhanbiaoji) {
+    public void setXingdonglidaifazhanbiaoji(Double xingdonglidaifazhanbiaoji) {
         this.xingdonglidaifazhanbiaoji = xingdonglidaifazhanbiaoji;
     }
 
-    public Integer getXingdonglia() {
+    public Double getXingdonglia() {
         return xingdonglia;
     }
 
-    public void setXingdonglia(Integer xingdonglia) {
+    public void setXingdonglia(Double xingdonglia) {
         this.xingdonglia = xingdonglia;
     }
 
-    public Integer getXingdonglib() {
+    public Double getXingdonglib() {
         return xingdonglib;
     }
 
-    public void setXingdonglib(Integer xingdonglib) {
+    public void setXingdonglib(Double xingdonglib) {
         this.xingdonglib = xingdonglib;
     }
 
-    public Integer getXingdonglic() {
+    public Double getXingdonglic() {
         return xingdonglic;
     }
 
-    public void setXingdonglic(Integer xingdonglic) {
+    public void setXingdonglic(Double xingdonglic) {
         this.xingdonglic = xingdonglic;
     }
 
-    public Integer getXingdonglid() {
+    public Double getXingdonglid() {
         return xingdonglid;
     }
 
-    public void setXingdonglid(Integer xingdonglid) {
+    public void setXingdonglid(Double xingdonglid) {
         this.xingdonglid = xingdonglid;
     }
 
-    public Integer getShengrenliScore() {
+    public Double getShengrenliScore() {
         return shengrenliScore;
     }
 
-    public void setShengrenliScore(Integer shengrenliScore) {
+    public void setShengrenliScore(Double shengrenliScore) {
         this.shengrenliScore = shengrenliScore;
     }
 
