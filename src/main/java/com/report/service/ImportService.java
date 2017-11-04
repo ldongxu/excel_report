@@ -24,56 +24,61 @@ public class ImportService {
     @Autowired
     private MongoOperations mongoOperations;
 
-    public void importStaff(String path) throws FileNotFoundException {
+    public void importStaff(String path, Integer sequence) throws FileNotFoundException {
         File f = new File(path);
         InputStream inputStream = new FileInputStream(f);
 
         ExcelLogs logs = new ExcelLogs();
-        Collection<Staff> staffs = ExcelUtil.importExcel(Staff.class, 0,inputStream, "yyyy-MM-dd HH:mm:ss", logs, 0);
-        for(Staff m : staffs){
+        Collection<Staff> staffs = ExcelUtil.importExcel(Staff.class, 0, inputStream, "yyyy-MM-dd HH:mm:ss", logs, 0);
+        for (Staff m : staffs) {
+            m.setSequence(sequence);
             System.out.println(m);
         }
         mongoOperations.insert(staffs, Staff.class);
     }
 
 
-    public void importFirstLine(String path) throws FileNotFoundException {
-        File f=new File(path);
-        InputStream inputStream= new FileInputStream(f);
+    public void importFirstLine(String path, Integer sequence) throws FileNotFoundException {
+        File f = new File(path);
+        InputStream inputStream = new FileInputStream(f);
 
-        ExcelLogs logs =new ExcelLogs();
-        Collection<FirstLineManager> firstLineManagers = ExcelUtil.importExcel(FirstLineManager.class, 1,inputStream, "yyyy-MM-dd HH:mm:ss", logs , 0);
-
-        mongoOperations.insert(firstLineManagers,FirstLineManager.class);
+        ExcelLogs logs = new ExcelLogs();
+        Collection<FirstLineManager> firstLineManagers = ExcelUtil.importExcel(FirstLineManager.class, 1, inputStream, "yyyy-MM-dd HH:mm:ss", logs, 0);
+        for (FirstLineManager firstLineManager : firstLineManagers) {
+            firstLineManager.setSequence(sequence);
+            System.out.println(firstLineManager);
+        }
+        mongoOperations.insert(firstLineManagers, FirstLineManager.class);
     }
 
-    public void importMiddleManager(String path) throws FileNotFoundException {
+    public void importMiddleManager(String path, Integer sequence) throws FileNotFoundException {
 
-        File f=new File(path);
-        InputStream inputStream= new FileInputStream(f);
+        File f = new File(path);
+        InputStream inputStream = new FileInputStream(f);
 
-        ExcelLogs logs =new ExcelLogs();
-        Collection<MiddleManager> importExcel = ExcelUtil.importExcel(MiddleManager.class, 2,inputStream, "yyyy-MM-dd HH:mm:ss", logs , 0);
+        ExcelLogs logs = new ExcelLogs();
+        Collection<MiddleManager> importExcel = ExcelUtil.importExcel(MiddleManager.class, 2, inputStream, "yyyy-MM-dd HH:mm:ss", logs, 0);
 
-        for(MiddleManager m : importExcel){
+        for (MiddleManager m : importExcel) {
+            m.setSequence(sequence);
             System.out.println(m);
         }
-        mongoOperations.insert(importExcel,MiddleManager.class);
+        mongoOperations.insert(importExcel, MiddleManager.class);
 
     }
 
     public void importReserveCadres(String path) throws FileNotFoundException {
 
-        File f=new File(path);
-        InputStream inputStream= new FileInputStream(f);
+        File f = new File(path);
+        InputStream inputStream = new FileInputStream(f);
 
-        ExcelLogs logs =new ExcelLogs();
-        Collection<ReserveCadres> importExcel = ExcelUtil.importExcel(ReserveCadres.class, 3,inputStream, "yyyy-MM-dd HH:mm:ss", logs , 0);
+        ExcelLogs logs = new ExcelLogs();
+        Collection<ReserveCadres> importExcel = ExcelUtil.importExcel(ReserveCadres.class, 0, inputStream, "yyyy-MM-dd HH:mm:ss", logs, 0);
 
-        for(ReserveCadres m : importExcel){
+        for (ReserveCadres m : importExcel) {
             System.out.println(m);
         }
-        mongoOperations.insert(importExcel,ReserveCadres.class);
+        mongoOperations.insert(importExcel, ReserveCadres.class);
 
     }
 }

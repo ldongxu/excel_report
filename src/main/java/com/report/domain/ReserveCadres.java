@@ -32,147 +32,161 @@ public class ReserveCadres extends BaseBean{
     @ExcelCell(index = 12)
     private Double potentialScore;//潜质总分
     @ExcelCell(index = 13)
-    private Double potentialDepartmentRanking;//潜质部门内排名
-    @ExcelCell(index = 14)
-    private Double potentialOfficeRanking;//潜质处室内排名
-    @ExcelCell(index = 15)
     private Double potentialReserveRanking;//潜质后备干部内排名
-    @ExcelCell(index = 16)
+    @ExcelCell(index = 14)
     private Double interval;//总区间
-    @ExcelCell(index = 17)
+    @ExcelCell(index = 15)
     private Double hongguansiwei;
-    @ExcelCell(index = 18)
+    @ExcelCell(index = 16)
     private Double hongguansiweiyoushibiaoji;
-    @ExcelCell(index = 19)
+    @ExcelCell(index = 17)
     private Double hongguansiweidaifazhanbiaoji;
-    @ExcelCell(index = 20)
+    @ExcelCell(index = 18)
     private Double xinxifenxi;
-    @ExcelCell(index = 21)
+    @ExcelCell(index = 19)
     private Double xinxifenxiyoushibiaoji;
-    @ExcelCell(index = 22)
+    @ExcelCell(index = 20)
     private Double xinxifenxidaifazhanbiaoji;
-    @ExcelCell(index = 23)
+    @ExcelCell(index = 21)
     private Double caozuojingyan;
-    @ExcelCell(index = 24)
+    @ExcelCell(index = 22)
     private Double caozuojingyanyoushibiaoji;
-    @ExcelCell(index = 25)
+    @ExcelCell(index = 23)
     private Double caozuojingyandaifazhanbiaoji;
-    @ExcelCell(index = 26)
+    @ExcelCell(index = 24)
     private Double zhixingjihua;
-    @ExcelCell(index = 27)
+    @ExcelCell(index = 25)
     private Double zhixingjihuayoushibiaoji;
-    @ExcelCell(index = 28)
+    @ExcelCell(index = 26)
     private Double zhixingjihuadaifazhanbiaoji;
-    @ExcelCell(index = 29)
+    @ExcelCell(index = 27)
     private Double tuidongtaren;
-    @ExcelCell(index = 30)
+    @ExcelCell(index = 28)
     private Double tuidongtarenyoushibiaoji;
-    @ExcelCell(index = 31)
+    @ExcelCell(index = 29)
     private Double tuidongtarendaifazhanbiaoji;
-    @ExcelCell(index = 32)
+    @ExcelCell(index = 30)
     private Double renjijiaowang;
-    @ExcelCell(index = 33)
+    @ExcelCell(index = 31)
     private Double renjijiaowangyoushibiaoji;
-    @ExcelCell(index = 34)
+    @ExcelCell(index = 32)
     private Double renjijiaowangdaifazhanbiaoji;
-    @ExcelCell(index = 35)
+    @ExcelCell(index = 33)
     private Double renjilijie;
-    @ExcelCell(index = 36)
+    @ExcelCell(index = 34)
     private Double renjilijieyoushibiaoji;
-    @ExcelCell(index = 37)
+    @ExcelCell(index = 35)
     private Double renjilijiedaifazhanbiaoji;
-    @ExcelCell(index = 38)
+    @ExcelCell(index = 36)
     private Double zhidaotaren;
-    @ExcelCell(index = 39)
+    @ExcelCell(index = 37)
     private Double zhidaotarenyoushibiaoji;
-    @ExcelCell(index = 40)
+    @ExcelCell(index = 38)
     private Double zhidaotarendaifazhanbiaoji;
-    @ExcelCell(index = 41)
+    @ExcelCell(index = 39)
+    private Double zhidaoyujiankongyoushi;
+    @ExcelCell(index = 40)
     private Double zhidaoyujiankongyoushibiaoji;
-    @ExcelCell(index = 42)
+    @ExcelCell(index = 41)
     private Double zhidaoyujiankongdaifazhanbiaoji;
-    @ExcelCell(index = 43)
+    @ExcelCell(index = 42)
     private Double zhidaoyujiankonga;
-    @ExcelCell(index = 44)
+    @ExcelCell(index = 43)
     private Double zhidaoyujiankongb;
-    @ExcelCell(index = 45)
+    @ExcelCell(index = 44)
     private Double zhidaoyujiankongc;
-    @ExcelCell(index = 46)
+    @ExcelCell(index = 45)
     private Double zhidaoyujiankongd;
-    @ExcelCell(index = 47)
+    @ExcelCell(index = 46)
     private Double jili;
-    @ExcelCell(index = 48)
+    @ExcelCell(index = 47)
     private Double jiliyoushibiaoji;
-    @ExcelCell(index = 49)
+    @ExcelCell(index = 48)
     private Double jilidaifazhanbiaoji;
-    @ExcelCell(index = 50)
+    @ExcelCell(index = 49)
     private Double jilia;
-    @ExcelCell(index = 51)
+    @ExcelCell(index = 50)
     private Double jilib;
-    @ExcelCell(index = 52)
+    @ExcelCell(index = 51)
     private Double jilic;
-    @ExcelCell(index = 53)
+    @ExcelCell(index = 52)
     private Double jilid;
-    @ExcelCell(index = 54)
+    @ExcelCell(index = 53)
     private Double peiyangtaren;
-    @ExcelCell(index = 55)
+    @ExcelCell(index = 54)
     private Double peiyangtarenyoushibiaoji;
-    @ExcelCell(index = 56)
+    @ExcelCell(index = 55)
     private Double peiyangtarenfazhanbiaoji;
-    @ExcelCell(index = 57)
+    @ExcelCell(index = 56)
     private Double peiyangtarena;
-    @ExcelCell(index = 58)
+    @ExcelCell(index = 57)
     private Double peiyangtarenb;
-    @ExcelCell(index = 59)
+    @ExcelCell(index = 58)
     private Double peiyangtarenc;
-    @ExcelCell(index = 60)
+    @ExcelCell(index = 59)
     private Double peiyangtarend;
-    @ExcelCell(index = 61)
+    @ExcelCell(index = 60)
     private Double goutongxietiao;
-    @ExcelCell(index = 62)
+    @ExcelCell(index = 61)
     private Double goutongxietiaoyoushibiaoji;
-    @ExcelCell(index = 63)
+    @ExcelCell(index = 62)
     private Double goutongxietiaodaifazhanbiaoji;
-    @ExcelCell(index = 64)
+    @ExcelCell(index = 63)
     private Double goutongxietiaoa;
-    @ExcelCell(index = 65)
+    @ExcelCell(index = 64)
     private Double goutongxietiaob;
-    @ExcelCell(index = 66)
+    @ExcelCell(index = 65)
     private Double goutongxietiaoc;
-    @ExcelCell(index = 67)
+    @ExcelCell(index = 66)
     private Double goutongxietiaod;
-    @ExcelCell(index = 68)
+    @ExcelCell(index = 67)
     private Double zhidugoujianyouhua;
-    @ExcelCell(index = 69)
+    @ExcelCell(index = 68)
     private Double zhidugoujianyouhuayoushibiaoji;
-    @ExcelCell(index = 70)
+    @ExcelCell(index = 69)
     private Double zhidugoujianyouhuadaifazhanbiaoji;
-    @ExcelCell(index = 71)
+    @ExcelCell(index = 70)
     private Double zhidugoujianyouhuaa;
-    @ExcelCell(index = 72)
+    @ExcelCell(index = 71)
     private Double zhidugoujianyouhuab;
-    @ExcelCell(index = 73)
+    @ExcelCell(index = 72)
     private Double zhidugoujianyouhuac;
-    @ExcelCell(index = 74)
+    @ExcelCell(index = 73)
     private Double zhidugoujianyouhuad;
-    @ExcelCell(index = 75)
+    @ExcelCell(index = 74)
     private Double quanjuguannian;
-    @ExcelCell(index = 76)
+    @ExcelCell(index = 75)
     private Double quanjuguannianyoushibiaoji;
-    @ExcelCell(index = 77)
+    @ExcelCell(index = 76)
     private Double quanjuguanniandaifazhanbiaoji;
-    @ExcelCell(index = 78)
+    @ExcelCell(index = 77)
     private Double quanjuguanniana;
-    @ExcelCell(index = 79)
+    @ExcelCell(index = 78)
     private Double quanjuguannianb;
-    @ExcelCell(index = 80)
+    @ExcelCell(index = 79)
     private Double quanjuguannianc;
-    @ExcelCell(index = 81)
+    @ExcelCell(index = 80)
     private Double quanjuguanniand;
-    @ExcelCell(index = 82)
+    @ExcelCell(index = 81)
     private Double shengrenliScore;
-    @ExcelCell(index = 83)
+    @ExcelCell(index = 82)
     private Double shengrenliRanking;
+    @ExcelCell(index = 83)
+    private Double hongguansiweiAverage;
+    @ExcelCell(index = 84)
+    private Double xinxifenxiAverage;
+    @ExcelCell(index = 85)
+    private Double caozuotiyanAverage;
+    @ExcelCell(index = 86)
+    private Double zhixingjihuaAverage;
+    @ExcelCell(index = 87)
+    private Double tuidongtarenAverage;
+    @ExcelCell(index = 88)
+    private Double renjijiaowangAverage;
+    @ExcelCell(index = 89)
+    private Double renjilijieAverage;
+    @ExcelCell(index = 90)
+    private Double zhidaorarenAverage;
 
     public String getIdentifier() {
         return identifier;
@@ -268,22 +282,6 @@ public class ReserveCadres extends BaseBean{
 
     public void setPotentialScore(Double potentialScore) {
         this.potentialScore = potentialScore;
-    }
-
-    public Double getPotentialDepartmentRanking() {
-        return potentialDepartmentRanking;
-    }
-
-    public void setPotentialDepartmentRanking(Double potentialDepartmentRanking) {
-        this.potentialDepartmentRanking = potentialDepartmentRanking;
-    }
-
-    public Double getPotentialOfficeRanking() {
-        return potentialOfficeRanking;
-    }
-
-    public void setPotentialOfficeRanking(Double potentialOfficeRanking) {
-        this.potentialOfficeRanking = potentialOfficeRanking;
     }
 
     public Double getPotentialReserveRanking() {
@@ -492,6 +490,14 @@ public class ReserveCadres extends BaseBean{
 
     public void setZhidaotarendaifazhanbiaoji(Double zhidaotarendaifazhanbiaoji) {
         this.zhidaotarendaifazhanbiaoji = zhidaotarendaifazhanbiaoji;
+    }
+
+    public Double getZhidaoyujiankongyoushi() {
+        return zhidaoyujiankongyoushi;
+    }
+
+    public void setZhidaoyujiankongyoushi(Double zhidaoyujiankongyoushi) {
+        this.zhidaoyujiankongyoushi = zhidaoyujiankongyoushi;
     }
 
     public Double getZhidaoyujiankongyoushibiaoji() {
@@ -838,6 +844,70 @@ public class ReserveCadres extends BaseBean{
         this.shengrenliRanking = shengrenliRanking;
     }
 
+    public Double getHongguansiweiAverage() {
+        return hongguansiweiAverage;
+    }
+
+    public void setHongguansiweiAverage(Double hongguansiweiAverage) {
+        this.hongguansiweiAverage = hongguansiweiAverage;
+    }
+
+    public Double getXinxifenxiAverage() {
+        return xinxifenxiAverage;
+    }
+
+    public void setXinxifenxiAverage(Double xinxifenxiAverage) {
+        this.xinxifenxiAverage = xinxifenxiAverage;
+    }
+
+    public Double getCaozuotiyanAverage() {
+        return caozuotiyanAverage;
+    }
+
+    public void setCaozuotiyanAverage(Double caozuotiyanAverage) {
+        this.caozuotiyanAverage = caozuotiyanAverage;
+    }
+
+    public Double getZhixingjihuaAverage() {
+        return zhixingjihuaAverage;
+    }
+
+    public void setZhixingjihuaAverage(Double zhixingjihuaAverage) {
+        this.zhixingjihuaAverage = zhixingjihuaAverage;
+    }
+
+    public Double getTuidongtarenAverage() {
+        return tuidongtarenAverage;
+    }
+
+    public void setTuidongtarenAverage(Double tuidongtarenAverage) {
+        this.tuidongtarenAverage = tuidongtarenAverage;
+    }
+
+    public Double getRenjijiaowangAverage() {
+        return renjijiaowangAverage;
+    }
+
+    public void setRenjijiaowangAverage(Double renjijiaowangAverage) {
+        this.renjijiaowangAverage = renjijiaowangAverage;
+    }
+
+    public Double getRenjilijieAverage() {
+        return renjilijieAverage;
+    }
+
+    public void setRenjilijieAverage(Double renjilijieAverage) {
+        this.renjilijieAverage = renjilijieAverage;
+    }
+
+    public Double getZhidaorarenAverage() {
+        return zhidaorarenAverage;
+    }
+
+    public void setZhidaorarenAverage(Double zhidaorarenAverage) {
+        this.zhidaorarenAverage = zhidaorarenAverage;
+    }
+
     @Override
     public String toString() {
         return "ReserveCadres{" +
@@ -853,8 +923,6 @@ public class ReserveCadres extends BaseBean{
                 ", managementYears=" + managementYears +
                 ", potentialLevel=" + potentialLevel +
                 ", potentialScore=" + potentialScore +
-                ", potentialDepartmentRanking=" + potentialDepartmentRanking +
-                ", potentialOfficeRanking=" + potentialOfficeRanking +
                 ", potentialReserveRanking=" + potentialReserveRanking +
                 ", interval=" + interval +
                 ", hongguansiwei=" + hongguansiwei +
@@ -881,6 +949,7 @@ public class ReserveCadres extends BaseBean{
                 ", zhidaotaren=" + zhidaotaren +
                 ", zhidaotarenyoushibiaoji=" + zhidaotarenyoushibiaoji +
                 ", zhidaotarendaifazhanbiaoji=" + zhidaotarendaifazhanbiaoji +
+                ", zhidaoyujiankongyoushi=" + zhidaoyujiankongyoushi +
                 ", zhidaoyujiankongyoushibiaoji=" + zhidaoyujiankongyoushibiaoji +
                 ", zhidaoyujiankongdaifazhanbiaoji=" + zhidaoyujiankongdaifazhanbiaoji +
                 ", zhidaoyujiankonga=" + zhidaoyujiankonga +
@@ -924,6 +993,14 @@ public class ReserveCadres extends BaseBean{
                 ", quanjuguanniand=" + quanjuguanniand +
                 ", shengrenliScore=" + shengrenliScore +
                 ", shengrenliRanking=" + shengrenliRanking +
+                ", hongguansiweiAverage=" + hongguansiweiAverage +
+                ", xinxifenxiAverage=" + xinxifenxiAverage +
+                ", caozuotiyanAverage=" + caozuotiyanAverage +
+                ", zhixingjihuaAverage=" + zhixingjihuaAverage +
+                ", tuidongtarenAverage=" + tuidongtarenAverage +
+                ", renjijiaowangAverage=" + renjijiaowangAverage +
+                ", renjilijieAverage=" + renjilijieAverage +
+                ", zhidaorarenAverage=" + zhidaorarenAverage +
                 '}';
     }
 }

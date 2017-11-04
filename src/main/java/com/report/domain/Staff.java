@@ -1,12 +1,13 @@
 package com.report.domain;
 
 import com.report.common.utils.ExcelCell;
+import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 
 /**
  * 普通员工
  * Created by 刘东旭 on 2017/10/23.
  */
-public class Staff extends BaseBean{
+public class Staff extends BaseBean {
     @ExcelCell(index = 1)
     private String identifier;//编号
     @ExcelCell(index = 2)
@@ -28,149 +29,157 @@ public class Staff extends BaseBean{
     @ExcelCell(index = 10)
     private Double managementYears;//管理经验
     @ExcelCell(index = 11)
-    private Double conditionDepartmentRanking;//基础条件部门内排名
+    private Double conditionRanking;//基础条件序列排名
     @ExcelCell(index = 12)
-    private Double conditionOfficeRanking;//基础条件处室排名
-    @ExcelCell(index = 13)
     private Double abilityScore;//基础能力总分
+    @ExcelCell(index = 13)
+    private Double abilityRanking;//基础能力序列排名
     @ExcelCell(index = 14)
-    private Double abilityDepartmentRanking;//基础能力部门内排名
-    @ExcelCell(index = 15)
-    private Double abilityOfficeRanking;//基础能力处室排名
-    @ExcelCell(index = 16)
     private Double cognitionScore;//认知特征总分
-    @ExcelCell(index = 17)
-    private Double cognitionDepartmentRanking;//认知特征部门内排名
-    @ExcelCell(index = 18)
-    private Double cognitionOfficeRanking;//认知特征处室排名
-    @ExcelCell(index = 19)
+    @ExcelCell(index = 15)
+    private Double cognitionRanking;//认知特征序列排名
+    @ExcelCell(index = 16)
     private Double potentialLevel;//潜质等级
-    @ExcelCell(index = 20)
+    @ExcelCell(index = 17)
     private Double potentialScore;//潜质总分
-    @ExcelCell(index = 21)
-    private Double potentialDepartmentRanking;//潜质部门内排名
-    @ExcelCell(index = 22)
-    private Double potentialOfficeRanking;//潜质处室内排名
-    @ExcelCell(index = 23)
+    @ExcelCell(index = 18)
+    private Double potentialRanking;//潜质序列排名
+    @ExcelCell(index = 19)
     private Double interval;//总区间
-    @ExcelCell(index = 24)
+    @ExcelCell(index = 20)
     private Double jingye;//敬业
-    @ExcelCell(index = 25)
+    @ExcelCell(index = 21)
     private Double jingyeyoushibiaoji;
-    @ExcelCell(index = 26)
+    @ExcelCell(index = 22)
     private Double jingyedaifazhanbiaoji;
-    @ExcelCell(index = 27)
+    @ExcelCell(index = 23)
     private Double jingyea;
-    @ExcelCell(index = 28)
+    @ExcelCell(index = 24)
     private Double jingyeb;
-    @ExcelCell(index = 29)
+    @ExcelCell(index = 25)
     private Double jingyec;
-    @ExcelCell(index = 30)
+    @ExcelCell(index = 26)
     private Double jingyed;
-    @ExcelCell(index = 31)
+    @ExcelCell(index = 27)
     private Double zhixing;
-    @ExcelCell(index = 32)
+    @ExcelCell(index = 28)
     private Double zhixingyoushibiaoji;
-    @ExcelCell(index = 33)
+    @ExcelCell(index = 29)
     private Double zhixingdaifazhanbiaoji;
-    @ExcelCell(index = 34)
+    @ExcelCell(index = 30)
     private Double zhixinga;
-    @ExcelCell(index = 35)
+    @ExcelCell(index = 31)
     private Double zhixingb;
-    @ExcelCell(index = 36)
+    @ExcelCell(index = 32)
     private Double zhixingc;
-    @ExcelCell(index = 37)
+    @ExcelCell(index = 33)
     private Double zhixingd;
-    @ExcelCell(index = 38)
+    @ExcelCell(index = 34)
     private Double kehudaoxiang;
-    @ExcelCell(index = 39)
+    @ExcelCell(index = 35)
     private Double kehudaoxiangysbj;
-    @ExcelCell(index = 40)
+    @ExcelCell(index = 36)
     private Double kehudaoxiangdfzbj;
-    @ExcelCell(index = 41)
+    @ExcelCell(index = 37)
     private Double kehudaoxianga;
-    @ExcelCell(index = 42)
+    @ExcelCell(index = 38)
     private Double kehudaoxiangb;
-    @ExcelCell(index = 43)
+    @ExcelCell(index = 39)
     private Double kehudaoxiangc;
-    @ExcelCell(index = 44)
+    @ExcelCell(index = 40)
     private Double kehudaoxiangd;
-    @ExcelCell(index = 45)
+    @ExcelCell(index = 41)
     private Double zhiduyishi;
-    @ExcelCell(index = 46)
+    @ExcelCell(index = 42)
     private Double zhiduyishiyoushibiaoji;
-    @ExcelCell(index = 47)
+    @ExcelCell(index = 43)
     private Double zhiduyishidaifazhanbiaoji;
-    @ExcelCell(index = 48)
+    @ExcelCell(index = 44)
     private Double zhiduyishia;
-    @ExcelCell(index = 49)
+    @ExcelCell(index = 45)
     private Double zhiduyishib;
-    @ExcelCell(index = 50)
+    @ExcelCell(index = 46)
     private Double zhiduyishic;
-    @ExcelCell(index = 51)
+    @ExcelCell(index = 47)
     private Double zhiduyishid;
+    @ExcelCell(index = 48)
+    private Double shichangdaoxiang;
+    @ExcelCell(index = 49)
+    private Double shichangdaoxiangyoushibiaoji;
+    @ExcelCell(index = 50)
+    private Double shichangdaoxiangdaifazhanbiaoji;
+    @ExcelCell(index = 51)
+    private Double shichangdaoxianga;
     @ExcelCell(index = 52)
-    private Double jixiaodaoxiang;
+    private Double shichangdaoxiangb;
     @ExcelCell(index = 53)
-    private Double jixiaodaoxiangyoushibiaoji;
+    private Double shichangdaoxiangc;
     @ExcelCell(index = 54)
-    private Double jixiaodaoxiangdaifazhanbiaoji;
+    private Double shichangdaoxiangd;
     @ExcelCell(index = 55)
-    private Double jixiaodaoxianga;
+    private Double goutongxietiao;
     @ExcelCell(index = 56)
-    private Double jixiaodaoxiangb;
+    private Double goutongxietiaoyoushibiaoji;
     @ExcelCell(index = 57)
-    private Double jixiaodaoxiangc;
+    private Double goutongxietiaodaifazhanbiaoji;
     @ExcelCell(index = 58)
-    private Double jixiaodaoxiangd;
+    private Double goutongxietiaoa;
     @ExcelCell(index = 59)
-    private Double guanxijianli;
+    private Double goutongxietiaob;
     @ExcelCell(index = 60)
-    private Double guanxijianliyoushibiaoji;
+    private Double goutongxietiaoc;
     @ExcelCell(index = 61)
-    private Double guanxijianlidaifazhanbiaoji;
+    private Double goutongxietiaod;
     @ExcelCell(index = 62)
-    private Double guanxijianlia;
+    private Double qianyanzhuizong;
     @ExcelCell(index = 63)
-    private Double guanxijianlib;
+    private Double qianyanzhuizongyoushibiaoji;
     @ExcelCell(index = 64)
-    private Double guanxijianlic;
+    private Double qianyanzhuizongdaifazhanbiaoji;
     @ExcelCell(index = 65)
-    private Double guanxijianlid;
+    private Double qianyanzhuizonga;
     @ExcelCell(index = 66)
-    private Double ziyuanzhenghe;
+    private Double qianyanzhuizongb;
     @ExcelCell(index = 67)
-    private Double ziyuanzhengheyoushibiaoji;
+    private Double qianyanzhuizongc;
     @ExcelCell(index = 68)
-    private Double ziyuanzhenghedaifazhanbiaoji;
+    private Double qianyanzhuizongd;
     @ExcelCell(index = 69)
-    private Double ziyuanzhenghea;
+    private Double xitongsiwei;
     @ExcelCell(index = 70)
-    private Double ziyuanzhengheb;
+    private Double xitongsiweiyoushibiaoji;
     @ExcelCell(index = 71)
-    private Double ziyuanzhenghec;
+    private Double xitongsiweidaifazhanbiaoji;
     @ExcelCell(index = 72)
-    private Double ziyuanzhenghed;
+    private Double xitongsiweia;
     @ExcelCell(index = 73)
-    private Double xingdongli;
+    private Double xitongsiweib;
     @ExcelCell(index = 74)
-    private Double xingdongliyoushibiaoji;
+    private Double xitongsiweic;
     @ExcelCell(index = 75)
-    private Double xingdonglidaifazhanbiaoji;
+    private Double xitongsiweid;
     @ExcelCell(index = 76)
-    private Double xingdonglia;
-    @ExcelCell(index = 77)
-    private Double xingdonglib;
-    @ExcelCell(index = 78)
-    private Double xingdonglic;
-    @ExcelCell(index = 79)
-    private Double xingdonglid;
-    @ExcelCell(index = 80)
     private Double shengrenliScore;
+    @ExcelCell(index = 77)
+    private Double shengrenliRanking;
+    @ExcelCell(index = 78)
+    private Double jingyeAverage;
+    @ExcelCell(index = 79)
+    private Double zhixingAverage;
+    @ExcelCell(index = 80)
+    private Double kehudaoxiangAverage;
     @ExcelCell(index = 81)
-    private Double shengrenliDepartmentRanking;
+    private Double zhiduyishiAverage;
     @ExcelCell(index = 82)
-    private Double shengrenliOfficeRanking;
+    private Double shichangdaoxiangAverage;
+    @ExcelCell(index = 83)
+    private Double goutongxietiaoAverage;
+    @ExcelCell(index = 84)
+    private Double qianyanzhuizongAverage;
+    @ExcelCell(index = 85)
+    private Double xitongsiweiAverage;
+
+    private Integer sequence;//人员序列
 
     public String getIdentifier() {
         return identifier;
@@ -252,20 +261,12 @@ public class Staff extends BaseBean{
         this.managementYears = managementYears;
     }
 
-    public Double getConditionDepartmentRanking() {
-        return conditionDepartmentRanking;
+    public Double getConditionRanking() {
+        return conditionRanking;
     }
 
-    public void setConditionDepartmentRanking(Double conditionDepartmentRanking) {
-        this.conditionDepartmentRanking = conditionDepartmentRanking;
-    }
-
-    public Double getConditionOfficeRanking() {
-        return conditionOfficeRanking;
-    }
-
-    public void setConditionOfficeRanking(Double conditionOfficeRanking) {
-        this.conditionOfficeRanking = conditionOfficeRanking;
+    public void setConditionRanking(Double conditionRanking) {
+        this.conditionRanking = conditionRanking;
     }
 
     public Double getAbilityScore() {
@@ -276,20 +277,12 @@ public class Staff extends BaseBean{
         this.abilityScore = abilityScore;
     }
 
-    public Double getAbilityDepartmentRanking() {
-        return abilityDepartmentRanking;
+    public Double getAbilityRanking() {
+        return abilityRanking;
     }
 
-    public void setAbilityDepartmentRanking(Double abilityDepartmentRanking) {
-        this.abilityDepartmentRanking = abilityDepartmentRanking;
-    }
-
-    public Double getAbilityOfficeRanking() {
-        return abilityOfficeRanking;
-    }
-
-    public void setAbilityOfficeRanking(Double abilityOfficeRanking) {
-        this.abilityOfficeRanking = abilityOfficeRanking;
+    public void setAbilityRanking(Double abilityRanking) {
+        this.abilityRanking = abilityRanking;
     }
 
     public Double getCognitionScore() {
@@ -300,20 +293,12 @@ public class Staff extends BaseBean{
         this.cognitionScore = cognitionScore;
     }
 
-    public Double getCognitionDepartmentRanking() {
-        return cognitionDepartmentRanking;
+    public Double getCognitionRanking() {
+        return cognitionRanking;
     }
 
-    public void setCognitionDepartmentRanking(Double cognitionDepartmentRanking) {
-        this.cognitionDepartmentRanking = cognitionDepartmentRanking;
-    }
-
-    public Double getCognitionOfficeRanking() {
-        return cognitionOfficeRanking;
-    }
-
-    public void setCognitionOfficeRanking(Double cognitionOfficeRanking) {
-        this.cognitionOfficeRanking = cognitionOfficeRanking;
+    public void setCognitionRanking(Double cognitionRanking) {
+        this.cognitionRanking = cognitionRanking;
     }
 
     public Double getPotentialLevel() {
@@ -332,20 +317,12 @@ public class Staff extends BaseBean{
         this.potentialScore = potentialScore;
     }
 
-    public Double getPotentialDepartmentRanking() {
-        return potentialDepartmentRanking;
+    public Double getPotentialRanking() {
+        return potentialRanking;
     }
 
-    public void setPotentialDepartmentRanking(Double potentialDepartmentRanking) {
-        this.potentialDepartmentRanking = potentialDepartmentRanking;
-    }
-
-    public Double getPotentialOfficeRanking() {
-        return potentialOfficeRanking;
-    }
-
-    public void setPotentialOfficeRanking(Double potentialOfficeRanking) {
-        this.potentialOfficeRanking = potentialOfficeRanking;
+    public void setPotentialRanking(Double potentialRanking) {
+        this.potentialRanking = potentialRanking;
     }
 
     public Double getInterval() {
@@ -580,228 +557,228 @@ public class Staff extends BaseBean{
         this.zhiduyishid = zhiduyishid;
     }
 
-    public Double getJixiaodaoxiang() {
-        return jixiaodaoxiang;
+    public Double getShichangdaoxiang() {
+        return shichangdaoxiang;
     }
 
-    public void setJixiaodaoxiang(Double jixiaodaoxiang) {
-        this.jixiaodaoxiang = jixiaodaoxiang;
+    public void setShichangdaoxiang(Double shichangdaoxiang) {
+        this.shichangdaoxiang = shichangdaoxiang;
     }
 
-    public Double getJixiaodaoxiangyoushibiaoji() {
-        return jixiaodaoxiangyoushibiaoji;
+    public Double getShichangdaoxiangyoushibiaoji() {
+        return shichangdaoxiangyoushibiaoji;
     }
 
-    public void setJixiaodaoxiangyoushibiaoji(Double jixiaodaoxiangyoushibiaoji) {
-        this.jixiaodaoxiangyoushibiaoji = jixiaodaoxiangyoushibiaoji;
+    public void setShichangdaoxiangyoushibiaoji(Double shichangdaoxiangyoushibiaoji) {
+        this.shichangdaoxiangyoushibiaoji = shichangdaoxiangyoushibiaoji;
     }
 
-    public Double getJixiaodaoxiangdaifazhanbiaoji() {
-        return jixiaodaoxiangdaifazhanbiaoji;
+    public Double getShichangdaoxiangdaifazhanbiaoji() {
+        return shichangdaoxiangdaifazhanbiaoji;
     }
 
-    public void setJixiaodaoxiangdaifazhanbiaoji(Double jixiaodaoxiangdaifazhanbiaoji) {
-        this.jixiaodaoxiangdaifazhanbiaoji = jixiaodaoxiangdaifazhanbiaoji;
+    public void setShichangdaoxiangdaifazhanbiaoji(Double shichangdaoxiangdaifazhanbiaoji) {
+        this.shichangdaoxiangdaifazhanbiaoji = shichangdaoxiangdaifazhanbiaoji;
     }
 
-    public Double getJixiaodaoxianga() {
-        return jixiaodaoxianga;
+    public Double getShichangdaoxianga() {
+        return shichangdaoxianga;
     }
 
-    public void setJixiaodaoxianga(Double jixiaodaoxianga) {
-        this.jixiaodaoxianga = jixiaodaoxianga;
+    public void setShichangdaoxianga(Double shichangdaoxianga) {
+        this.shichangdaoxianga = shichangdaoxianga;
     }
 
-    public Double getJixiaodaoxiangb() {
-        return jixiaodaoxiangb;
+    public Double getShichangdaoxiangb() {
+        return shichangdaoxiangb;
     }
 
-    public void setJixiaodaoxiangb(Double jixiaodaoxiangb) {
-        this.jixiaodaoxiangb = jixiaodaoxiangb;
+    public void setShichangdaoxiangb(Double shichangdaoxiangb) {
+        this.shichangdaoxiangb = shichangdaoxiangb;
     }
 
-    public Double getJixiaodaoxiangc() {
-        return jixiaodaoxiangc;
+    public Double getShichangdaoxiangc() {
+        return shichangdaoxiangc;
     }
 
-    public void setJixiaodaoxiangc(Double jixiaodaoxiangc) {
-        this.jixiaodaoxiangc = jixiaodaoxiangc;
+    public void setShichangdaoxiangc(Double shichangdaoxiangc) {
+        this.shichangdaoxiangc = shichangdaoxiangc;
     }
 
-    public Double getJixiaodaoxiangd() {
-        return jixiaodaoxiangd;
+    public Double getShichangdaoxiangd() {
+        return shichangdaoxiangd;
     }
 
-    public void setJixiaodaoxiangd(Double jixiaodaoxiangd) {
-        this.jixiaodaoxiangd = jixiaodaoxiangd;
+    public void setShichangdaoxiangd(Double shichangdaoxiangd) {
+        this.shichangdaoxiangd = shichangdaoxiangd;
     }
 
-    public Double getGuanxijianli() {
-        return guanxijianli;
+    public Double getGoutongxietiao() {
+        return goutongxietiao;
     }
 
-    public void setGuanxijianli(Double guanxijianli) {
-        this.guanxijianli = guanxijianli;
+    public void setGoutongxietiao(Double goutongxietiao) {
+        this.goutongxietiao = goutongxietiao;
     }
 
-    public Double getGuanxijianliyoushibiaoji() {
-        return guanxijianliyoushibiaoji;
+    public Double getGoutongxietiaoyoushibiaoji() {
+        return goutongxietiaoyoushibiaoji;
     }
 
-    public void setGuanxijianliyoushibiaoji(Double guanxijianliyoushibiaoji) {
-        this.guanxijianliyoushibiaoji = guanxijianliyoushibiaoji;
+    public void setGoutongxietiaoyoushibiaoji(Double goutongxietiaoyoushibiaoji) {
+        this.goutongxietiaoyoushibiaoji = goutongxietiaoyoushibiaoji;
     }
 
-    public Double getGuanxijianlidaifazhanbiaoji() {
-        return guanxijianlidaifazhanbiaoji;
+    public Double getGoutongxietiaodaifazhanbiaoji() {
+        return goutongxietiaodaifazhanbiaoji;
     }
 
-    public void setGuanxijianlidaifazhanbiaoji(Double guanxijianlidaifazhanbiaoji) {
-        this.guanxijianlidaifazhanbiaoji = guanxijianlidaifazhanbiaoji;
+    public void setGoutongxietiaodaifazhanbiaoji(Double goutongxietiaodaifazhanbiaoji) {
+        this.goutongxietiaodaifazhanbiaoji = goutongxietiaodaifazhanbiaoji;
     }
 
-    public Double getGuanxijianlia() {
-        return guanxijianlia;
+    public Double getGoutongxietiaoa() {
+        return goutongxietiaoa;
     }
 
-    public void setGuanxijianlia(Double guanxijianlia) {
-        this.guanxijianlia = guanxijianlia;
+    public void setGoutongxietiaoa(Double goutongxietiaoa) {
+        this.goutongxietiaoa = goutongxietiaoa;
     }
 
-    public Double getGuanxijianlib() {
-        return guanxijianlib;
+    public Double getGoutongxietiaob() {
+        return goutongxietiaob;
     }
 
-    public void setGuanxijianlib(Double guanxijianlib) {
-        this.guanxijianlib = guanxijianlib;
+    public void setGoutongxietiaob(Double goutongxietiaob) {
+        this.goutongxietiaob = goutongxietiaob;
     }
 
-    public Double getGuanxijianlic() {
-        return guanxijianlic;
+    public Double getGoutongxietiaoc() {
+        return goutongxietiaoc;
     }
 
-    public void setGuanxijianlic(Double guanxijianlic) {
-        this.guanxijianlic = guanxijianlic;
+    public void setGoutongxietiaoc(Double goutongxietiaoc) {
+        this.goutongxietiaoc = goutongxietiaoc;
     }
 
-    public Double getGuanxijianlid() {
-        return guanxijianlid;
+    public Double getGoutongxietiaod() {
+        return goutongxietiaod;
     }
 
-    public void setGuanxijianlid(Double guanxijianlid) {
-        this.guanxijianlid = guanxijianlid;
+    public void setGoutongxietiaod(Double goutongxietiaod) {
+        this.goutongxietiaod = goutongxietiaod;
     }
 
-    public Double getZiyuanzhenghe() {
-        return ziyuanzhenghe;
+    public Double getQianyanzhuizong() {
+        return qianyanzhuizong;
     }
 
-    public void setZiyuanzhenghe(Double ziyuanzhenghe) {
-        this.ziyuanzhenghe = ziyuanzhenghe;
+    public void setQianyanzhuizong(Double qianyanzhuizong) {
+        this.qianyanzhuizong = qianyanzhuizong;
     }
 
-    public Double getZiyuanzhengheyoushibiaoji() {
-        return ziyuanzhengheyoushibiaoji;
+    public Double getQianyanzhuizongyoushibiaoji() {
+        return qianyanzhuizongyoushibiaoji;
     }
 
-    public void setZiyuanzhengheyoushibiaoji(Double ziyuanzhengheyoushibiaoji) {
-        this.ziyuanzhengheyoushibiaoji = ziyuanzhengheyoushibiaoji;
+    public void setQianyanzhuizongyoushibiaoji(Double qianyanzhuizongyoushibiaoji) {
+        this.qianyanzhuizongyoushibiaoji = qianyanzhuizongyoushibiaoji;
     }
 
-    public Double getZiyuanzhenghedaifazhanbiaoji() {
-        return ziyuanzhenghedaifazhanbiaoji;
+    public Double getQianyanzhuizongdaifazhanbiaoji() {
+        return qianyanzhuizongdaifazhanbiaoji;
     }
 
-    public void setZiyuanzhenghedaifazhanbiaoji(Double ziyuanzhenghedaifazhanbiaoji) {
-        this.ziyuanzhenghedaifazhanbiaoji = ziyuanzhenghedaifazhanbiaoji;
+    public void setQianyanzhuizongdaifazhanbiaoji(Double qianyanzhuizongdaifazhanbiaoji) {
+        this.qianyanzhuizongdaifazhanbiaoji = qianyanzhuizongdaifazhanbiaoji;
     }
 
-    public Double getZiyuanzhenghea() {
-        return ziyuanzhenghea;
+    public Double getQianyanzhuizonga() {
+        return qianyanzhuizonga;
     }
 
-    public void setZiyuanzhenghea(Double ziyuanzhenghea) {
-        this.ziyuanzhenghea = ziyuanzhenghea;
+    public void setQianyanzhuizonga(Double qianyanzhuizonga) {
+        this.qianyanzhuizonga = qianyanzhuizonga;
     }
 
-    public Double getZiyuanzhengheb() {
-        return ziyuanzhengheb;
+    public Double getQianyanzhuizongb() {
+        return qianyanzhuizongb;
     }
 
-    public void setZiyuanzhengheb(Double ziyuanzhengheb) {
-        this.ziyuanzhengheb = ziyuanzhengheb;
+    public void setQianyanzhuizongb(Double qianyanzhuizongb) {
+        this.qianyanzhuizongb = qianyanzhuizongb;
     }
 
-    public Double getZiyuanzhenghec() {
-        return ziyuanzhenghec;
+    public Double getQianyanzhuizongc() {
+        return qianyanzhuizongc;
     }
 
-    public void setZiyuanzhenghec(Double ziyuanzhenghec) {
-        this.ziyuanzhenghec = ziyuanzhenghec;
+    public void setQianyanzhuizongc(Double qianyanzhuizongc) {
+        this.qianyanzhuizongc = qianyanzhuizongc;
     }
 
-    public Double getZiyuanzhenghed() {
-        return ziyuanzhenghed;
+    public Double getQianyanzhuizongd() {
+        return qianyanzhuizongd;
     }
 
-    public void setZiyuanzhenghed(Double ziyuanzhenghed) {
-        this.ziyuanzhenghed = ziyuanzhenghed;
+    public void setQianyanzhuizongd(Double qianyanzhuizongd) {
+        this.qianyanzhuizongd = qianyanzhuizongd;
     }
 
-    public Double getXingdongli() {
-        return xingdongli;
+    public Double getXitongsiwei() {
+        return xitongsiwei;
     }
 
-    public void setXingdongli(Double xingdongli) {
-        this.xingdongli = xingdongli;
+    public void setXitongsiwei(Double xitongsiwei) {
+        this.xitongsiwei = xitongsiwei;
     }
 
-    public Double getXingdongliyoushibiaoji() {
-        return xingdongliyoushibiaoji;
+    public Double getXitongsiweiyoushibiaoji() {
+        return xitongsiweiyoushibiaoji;
     }
 
-    public void setXingdongliyoushibiaoji(Double xingdongliyoushibiaoji) {
-        this.xingdongliyoushibiaoji = xingdongliyoushibiaoji;
+    public void setXitongsiweiyoushibiaoji(Double xitongsiweiyoushibiaoji) {
+        this.xitongsiweiyoushibiaoji = xitongsiweiyoushibiaoji;
     }
 
-    public Double getXingdonglidaifazhanbiaoji() {
-        return xingdonglidaifazhanbiaoji;
+    public Double getXitongsiweidaifazhanbiaoji() {
+        return xitongsiweidaifazhanbiaoji;
     }
 
-    public void setXingdonglidaifazhanbiaoji(Double xingdonglidaifazhanbiaoji) {
-        this.xingdonglidaifazhanbiaoji = xingdonglidaifazhanbiaoji;
+    public void setXitongsiweidaifazhanbiaoji(Double xitongsiweidaifazhanbiaoji) {
+        this.xitongsiweidaifazhanbiaoji = xitongsiweidaifazhanbiaoji;
     }
 
-    public Double getXingdonglia() {
-        return xingdonglia;
+    public Double getXitongsiweia() {
+        return xitongsiweia;
     }
 
-    public void setXingdonglia(Double xingdonglia) {
-        this.xingdonglia = xingdonglia;
+    public void setXitongsiweia(Double xitongsiweia) {
+        this.xitongsiweia = xitongsiweia;
     }
 
-    public Double getXingdonglib() {
-        return xingdonglib;
+    public Double getXitongsiweib() {
+        return xitongsiweib;
     }
 
-    public void setXingdonglib(Double xingdonglib) {
-        this.xingdonglib = xingdonglib;
+    public void setXitongsiweib(Double xitongsiweib) {
+        this.xitongsiweib = xitongsiweib;
     }
 
-    public Double getXingdonglic() {
-        return xingdonglic;
+    public Double getXitongsiweic() {
+        return xitongsiweic;
     }
 
-    public void setXingdonglic(Double xingdonglic) {
-        this.xingdonglic = xingdonglic;
+    public void setXitongsiweic(Double xitongsiweic) {
+        this.xitongsiweic = xitongsiweic;
     }
 
-    public Double getXingdonglid() {
-        return xingdonglid;
+    public Double getXitongsiweid() {
+        return xitongsiweid;
     }
 
-    public void setXingdonglid(Double xingdonglid) {
-        this.xingdonglid = xingdonglid;
+    public void setXitongsiweid(Double xitongsiweid) {
+        this.xitongsiweid = xitongsiweid;
     }
 
     public Double getShengrenliScore() {
@@ -812,20 +789,84 @@ public class Staff extends BaseBean{
         this.shengrenliScore = shengrenliScore;
     }
 
-    public Double getShengrenliDepartmentRanking() {
-        return shengrenliDepartmentRanking;
+    public Double getShengrenliRanking() {
+        return shengrenliRanking;
     }
 
-    public void setShengrenliDepartmentRanking(Double shengrenliDepartmentRanking) {
-        this.shengrenliDepartmentRanking = shengrenliDepartmentRanking;
+    public void setShengrenliRanking(Double shengrenliRanking) {
+        this.shengrenliRanking = shengrenliRanking;
     }
 
-    public Double getShengrenliOfficeRanking() {
-        return shengrenliOfficeRanking;
+    public Double getJingyeAverage() {
+        return jingyeAverage;
     }
 
-    public void setShengrenliOfficeRanking(Double shengrenliOfficeRanking) {
-        this.shengrenliOfficeRanking = shengrenliOfficeRanking;
+    public void setJingyeAverage(Double jingyeAverage) {
+        this.jingyeAverage = jingyeAverage;
+    }
+
+    public Double getZhixingAverage() {
+        return zhixingAverage;
+    }
+
+    public void setZhixingAverage(Double zhixingAverage) {
+        this.zhixingAverage = zhixingAverage;
+    }
+
+    public Double getKehudaoxiangAverage() {
+        return kehudaoxiangAverage;
+    }
+
+    public void setKehudaoxiangAverage(Double kehudaoxiangAverage) {
+        this.kehudaoxiangAverage = kehudaoxiangAverage;
+    }
+
+    public Double getZhiduyishiAverage() {
+        return zhiduyishiAverage;
+    }
+
+    public void setZhiduyishiAverage(Double zhiduyishiAverage) {
+        this.zhiduyishiAverage = zhiduyishiAverage;
+    }
+
+    public Double getShichangdaoxiangAverage() {
+        return shichangdaoxiangAverage;
+    }
+
+    public void setShichangdaoxiangAverage(Double shichangdaoxiangAverage) {
+        this.shichangdaoxiangAverage = shichangdaoxiangAverage;
+    }
+
+    public Double getGoutongxietiaoAverage() {
+        return goutongxietiaoAverage;
+    }
+
+    public void setGoutongxietiaoAverage(Double goutongxietiaoAverage) {
+        this.goutongxietiaoAverage = goutongxietiaoAverage;
+    }
+
+    public Double getQianyanzhuizongAverage() {
+        return qianyanzhuizongAverage;
+    }
+
+    public void setQianyanzhuizongAverage(Double qianyanzhuizongAverage) {
+        this.qianyanzhuizongAverage = qianyanzhuizongAverage;
+    }
+
+    public Double getXitongsiweiAverage() {
+        return xitongsiweiAverage;
+    }
+
+    public void setXitongsiweiAverage(Double xitongsiweiAverage) {
+        this.xitongsiweiAverage = xitongsiweiAverage;
+    }
+
+    public Integer getSequence() {
+        return sequence;
+    }
+
+    public void setSequence(Integer sequence) {
+        this.sequence = sequence;
     }
 
     @Override
@@ -841,18 +882,14 @@ public class Staff extends BaseBean{
                 ", industryYears=" + industryYears +
                 ", professionalYears=" + professionalYears +
                 ", managementYears=" + managementYears +
-                ", conditionDepartmentRanking=" + conditionDepartmentRanking +
-                ", conditionOfficeRanking=" + conditionOfficeRanking +
+                ", conditionRanking=" + conditionRanking +
                 ", abilityScore=" + abilityScore +
-                ", abilityDepartmentRanking=" + abilityDepartmentRanking +
-                ", abilityOfficeRanking=" + abilityOfficeRanking +
+                ", abilityRanking=" + abilityRanking +
                 ", cognitionScore=" + cognitionScore +
-                ", cognitionDepartmentRanking=" + cognitionDepartmentRanking +
-                ", cognitionOfficeRanking=" + cognitionOfficeRanking +
+                ", cognitionRanking=" + cognitionRanking +
                 ", potentialLevel=" + potentialLevel +
                 ", potentialScore=" + potentialScore +
-                ", potentialDepartmentRanking=" + potentialDepartmentRanking +
-                ", potentialOfficeRanking=" + potentialOfficeRanking +
+                ", potentialRanking=" + potentialRanking +
                 ", interval=" + interval +
                 ", jingye=" + jingye +
                 ", jingyeyoushibiaoji=" + jingyeyoushibiaoji +
@@ -882,37 +919,45 @@ public class Staff extends BaseBean{
                 ", zhiduyishib=" + zhiduyishib +
                 ", zhiduyishic=" + zhiduyishic +
                 ", zhiduyishid=" + zhiduyishid +
-                ", jixiaodaoxiang=" + jixiaodaoxiang +
-                ", jixiaodaoxiangyoushibiaoji=" + jixiaodaoxiangyoushibiaoji +
-                ", jixiaodaoxiangdaifazhanbiaoji=" + jixiaodaoxiangdaifazhanbiaoji +
-                ", jixiaodaoxianga=" + jixiaodaoxianga +
-                ", jixiaodaoxiangb=" + jixiaodaoxiangb +
-                ", jixiaodaoxiangc=" + jixiaodaoxiangc +
-                ", jixiaodaoxiangd=" + jixiaodaoxiangd +
-                ", guanxijianli=" + guanxijianli +
-                ", guanxijianliyoushibiaoji=" + guanxijianliyoushibiaoji +
-                ", guanxijianlidaifazhanbiaoji=" + guanxijianlidaifazhanbiaoji +
-                ", guanxijianlia=" + guanxijianlia +
-                ", guanxijianlib=" + guanxijianlib +
-                ", guanxijianlic=" + guanxijianlic +
-                ", guanxijianlid=" + guanxijianlid +
-                ", ziyuanzhenghe=" + ziyuanzhenghe +
-                ", ziyuanzhengheyoushibiaoji=" + ziyuanzhengheyoushibiaoji +
-                ", ziyuanzhenghedaifazhanbiaoji=" + ziyuanzhenghedaifazhanbiaoji +
-                ", ziyuanzhenghea=" + ziyuanzhenghea +
-                ", ziyuanzhengheb=" + ziyuanzhengheb +
-                ", ziyuanzhenghec=" + ziyuanzhenghec +
-                ", ziyuanzhenghed=" + ziyuanzhenghed +
-                ", xingdongli=" + xingdongli +
-                ", xingdongliyoushibiaoji=" + xingdongliyoushibiaoji +
-                ", xingdonglidaifazhanbiaoji=" + xingdonglidaifazhanbiaoji +
-                ", xingdonglia=" + xingdonglia +
-                ", xingdonglib=" + xingdonglib +
-                ", xingdonglic=" + xingdonglic +
-                ", xingdonglid=" + xingdonglid +
+                ", shichangdaoxiang=" + shichangdaoxiang +
+                ", shichangdaoxiangyoushibiaoji=" + shichangdaoxiangyoushibiaoji +
+                ", shichangdaoxiangdaifazhanbiaoji=" + shichangdaoxiangdaifazhanbiaoji +
+                ", shichangdaoxianga=" + shichangdaoxianga +
+                ", shichangdaoxiangb=" + shichangdaoxiangb +
+                ", shichangdaoxiangc=" + shichangdaoxiangc +
+                ", shichangdaoxiangd=" + shichangdaoxiangd +
+                ", goutongxietiao=" + goutongxietiao +
+                ", goutongxietiaoyoushibiaoji=" + goutongxietiaoyoushibiaoji +
+                ", goutongxietiaodaifazhanbiaoji=" + goutongxietiaodaifazhanbiaoji +
+                ", goutongxietiaoa=" + goutongxietiaoa +
+                ", goutongxietiaob=" + goutongxietiaob +
+                ", goutongxietiaoc=" + goutongxietiaoc +
+                ", goutongxietiaod=" + goutongxietiaod +
+                ", qianyanzhuizong=" + qianyanzhuizong +
+                ", qianyanzhuizongyoushibiaoji=" + qianyanzhuizongyoushibiaoji +
+                ", qianyanzhuizongdaifazhanbiaoji=" + qianyanzhuizongdaifazhanbiaoji +
+                ", qianyanzhuizonga=" + qianyanzhuizonga +
+                ", qianyanzhuizongb=" + qianyanzhuizongb +
+                ", qianyanzhuizongc=" + qianyanzhuizongc +
+                ", qianyanzhuizongd=" + qianyanzhuizongd +
+                ", xitongsiwei=" + xitongsiwei +
+                ", xitongsiweiyoushibiaoji=" + xitongsiweiyoushibiaoji +
+                ", xitongsiweidaifazhanbiaoji=" + xitongsiweidaifazhanbiaoji +
+                ", xitongsiweia=" + xitongsiweia +
+                ", xitongsiweib=" + xitongsiweib +
+                ", xitongsiweic=" + xitongsiweic +
+                ", xitongsiweid=" + xitongsiweid +
                 ", shengrenliScore=" + shengrenliScore +
-                ", shengrenliDepartmentRanking=" + shengrenliDepartmentRanking +
-                ", shengrenliOfficeRanking=" + shengrenliOfficeRanking +
+                ", shengrenliRanking=" + shengrenliRanking +
+                ", jingyeAverage=" + jingyeAverage +
+                ", zhixingAverage=" + zhixingAverage +
+                ", kehudaoxiangAverage=" + kehudaoxiangAverage +
+                ", zhiduyishiAverage=" + zhiduyishiAverage +
+                ", shichangdaoxiangAverage=" + shichangdaoxiangAverage +
+                ", goutongxietiaoAverage=" + goutongxietiaoAverage +
+                ", qianyanzhuizongAverage=" + qianyanzhuizongAverage +
+                ", xitongsiweiAverage=" + xitongsiweiAverage +
+                ", sequence=" + sequence +
                 '}';
     }
 }

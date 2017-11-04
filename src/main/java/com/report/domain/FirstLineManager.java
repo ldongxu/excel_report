@@ -33,7 +33,7 @@ public class FirstLineManager extends BaseBean{
     @ExcelCell(index = 12)
     private Double abilityScore;//基础能力总分
     @ExcelCell(index = 13)
-    private Double abilityRanking;//基础能力基层管理排名
+    private Double abilityRanking;//基础能力序列排名
     @ExcelCell(index = 14)
     private Double cognitionScore;//认知特征总分
     @ExcelCell(index = 15)
@@ -103,61 +103,61 @@ public class FirstLineManager extends BaseBean{
     @ExcelCell(index = 46)
     private Double zhiduyishid;
     @ExcelCell(index = 47)
-    private Double jixiaodaoxiang;
+    private Double shichangdaoxiang;
     @ExcelCell(index = 48)
-    private Double jixiaodaoxiangyoushibiaoji;
+    private Double shichangdaoxiangyoushibiaoji;
     @ExcelCell(index = 49)
-    private Double jixiaodaoxiangdaifazhanbiaoji;
+    private Double shichangdaoxiangdaifazhanbiaoji;
     @ExcelCell(index = 50)
-    private Double jixiaodaoxianga;
+    private Double shichangdaoxianga;
     @ExcelCell(index = 51)
-    private Double jixiaodaoxiangb;
+    private Double shichangdaoxiangb;
     @ExcelCell(index = 52)
-    private Double jixiaodaoxiangc;
+    private Double shichangdaoxiangc;
     @ExcelCell(index = 53)
-    private Double jixiaodaoxiangd;
+    private Double shichangdaoxiangd;
     @ExcelCell(index = 54)
-    private Double guanxijianli;
+    private Double goutongxietiao;
     @ExcelCell(index = 55)
-    private Double guanxijianliyoushibiaoji;
+    private Double goutongxietiaoyoushibiaoji;
     @ExcelCell(index = 56)
-    private Double guanxijianlidaifazhanbiaoji;
+    private Double goutongxietiaodaifazhanbiaoji;
     @ExcelCell(index = 57)
-    private Double guanxijianlia;
+    private Double goutongxietiaoa;
     @ExcelCell(index = 58)
-    private Double guanxijianlib;
+    private Double goutongxietiaob;
     @ExcelCell(index = 59)
-    private Double guanxijianlic;
+    private Double goutongxietiaoc;
     @ExcelCell(index = 60)
-    private Double guanxijianlid;
+    private Double goutongxietiaod;
     @ExcelCell(index = 61)
-    private Double ziyuanzhenghe;
+    private Double qianyanzhuizong;
     @ExcelCell(index = 62)
-    private Double ziyuanzhengheyoushibiaoji;
+    private Double qianyanzhuizongyoushibiaoji;
     @ExcelCell(index = 63)
-    private Double ziyuanzhenghedaifazhanbiaoji;
+    private Double qianyanzhuizongdaifazhanbiaoji;
     @ExcelCell(index = 64)
-    private Double ziyuanzhenghea;
+    private Double qianyanzhuizonga;
     @ExcelCell(index = 65)
-    private Double ziyuanzhengheb;
+    private Double qianyanzhuizongb;
     @ExcelCell(index = 66)
-    private Double ziyuanzhenghec;
+    private Double qianyanzhuizongc;
     @ExcelCell(index = 67)
-    private Double ziyuanzhenghed;
+    private Double qianyanzhuizongd;
     @ExcelCell(index = 68)
-    private Double xingdongli;
+    private Double xitongsiwei;
     @ExcelCell(index = 69)
-    private Double xingdongliyoushibiaoji;
+    private Double xitongsiweiyoushibiaoji;
     @ExcelCell(index = 70)
-    private Double xingdonglidaifazhanbiaoji;
+    private Double xitongsiweidaifazhanbiaoji;
     @ExcelCell(index = 71)
-    private Double xingdonglia;
+    private Double xitongsiweia;
     @ExcelCell(index = 72)
-    private Double xingdonglib;
+    private Double xitongsiweib;
     @ExcelCell(index = 73)
-    private Double xingdonglic;
+    private Double xitongsiweic;
     @ExcelCell(index = 74)
-    private Double xingdonglid;
+    private Double xitongsiweid;
     @ExcelCell(index = 75)
     private Double zhidaoyujiankong;
     @ExcelCell(index = 76)
@@ -190,6 +190,28 @@ public class FirstLineManager extends BaseBean{
     private Double shengrenliScore;
     @ExcelCell(index = 90)
     private Double shengrenliRanking;//胜任力基层管理排名
+    @ExcelCell(index = 91)
+    private Double jingyeAverage;
+    @ExcelCell(index = 92)
+    private Double zhixingAverage;
+    @ExcelCell(index = 93)
+    private Double kehuweizhongxinAverage;
+    @ExcelCell(index = 94)
+    private Double zhiduyishiAverage;
+    @ExcelCell(index = 95)
+    private Double shichangdaoxiangAverage;
+    @ExcelCell(index = 96)
+    private Double goutongxietiaoAverage;
+    @ExcelCell(index = 97)
+    private Double qianyanzhuizongAverage;
+    @ExcelCell(index = 98)
+    private Double xitongsiweiAverage;
+    @ExcelCell(index = 99)
+    private Double zhidaoyujiankongAverage;
+    @ExcelCell(index = 100)
+    private Double jiliAverage;
+
+    private Integer sequence;//人员序列
 
     public String getIdentifier() {
         return identifier;
@@ -567,228 +589,228 @@ public class FirstLineManager extends BaseBean{
         this.zhiduyishid = zhiduyishid;
     }
 
-    public Double getJixiaodaoxiang() {
-        return jixiaodaoxiang;
+    public Double getShichangdaoxiang() {
+        return shichangdaoxiang;
     }
 
-    public void setJixiaodaoxiang(Double jixiaodaoxiang) {
-        this.jixiaodaoxiang = jixiaodaoxiang;
+    public void setShichangdaoxiang(Double shichangdaoxiang) {
+        this.shichangdaoxiang = shichangdaoxiang;
     }
 
-    public Double getJixiaodaoxiangyoushibiaoji() {
-        return jixiaodaoxiangyoushibiaoji;
+    public Double getShichangdaoxiangyoushibiaoji() {
+        return shichangdaoxiangyoushibiaoji;
     }
 
-    public void setJixiaodaoxiangyoushibiaoji(Double jixiaodaoxiangyoushibiaoji) {
-        this.jixiaodaoxiangyoushibiaoji = jixiaodaoxiangyoushibiaoji;
+    public void setShichangdaoxiangyoushibiaoji(Double shichangdaoxiangyoushibiaoji) {
+        this.shichangdaoxiangyoushibiaoji = shichangdaoxiangyoushibiaoji;
     }
 
-    public Double getJixiaodaoxiangdaifazhanbiaoji() {
-        return jixiaodaoxiangdaifazhanbiaoji;
+    public Double getShichangdaoxiangdaifazhanbiaoji() {
+        return shichangdaoxiangdaifazhanbiaoji;
     }
 
-    public void setJixiaodaoxiangdaifazhanbiaoji(Double jixiaodaoxiangdaifazhanbiaoji) {
-        this.jixiaodaoxiangdaifazhanbiaoji = jixiaodaoxiangdaifazhanbiaoji;
+    public void setShichangdaoxiangdaifazhanbiaoji(Double shichangdaoxiangdaifazhanbiaoji) {
+        this.shichangdaoxiangdaifazhanbiaoji = shichangdaoxiangdaifazhanbiaoji;
     }
 
-    public Double getJixiaodaoxianga() {
-        return jixiaodaoxianga;
+    public Double getShichangdaoxianga() {
+        return shichangdaoxianga;
     }
 
-    public void setJixiaodaoxianga(Double jixiaodaoxianga) {
-        this.jixiaodaoxianga = jixiaodaoxianga;
+    public void setShichangdaoxianga(Double shichangdaoxianga) {
+        this.shichangdaoxianga = shichangdaoxianga;
     }
 
-    public Double getJixiaodaoxiangb() {
-        return jixiaodaoxiangb;
+    public Double getShichangdaoxiangb() {
+        return shichangdaoxiangb;
     }
 
-    public void setJixiaodaoxiangb(Double jixiaodaoxiangb) {
-        this.jixiaodaoxiangb = jixiaodaoxiangb;
+    public void setShichangdaoxiangb(Double shichangdaoxiangb) {
+        this.shichangdaoxiangb = shichangdaoxiangb;
     }
 
-    public Double getJixiaodaoxiangc() {
-        return jixiaodaoxiangc;
+    public Double getShichangdaoxiangc() {
+        return shichangdaoxiangc;
     }
 
-    public void setJixiaodaoxiangc(Double jixiaodaoxiangc) {
-        this.jixiaodaoxiangc = jixiaodaoxiangc;
+    public void setShichangdaoxiangc(Double shichangdaoxiangc) {
+        this.shichangdaoxiangc = shichangdaoxiangc;
     }
 
-    public Double getJixiaodaoxiangd() {
-        return jixiaodaoxiangd;
+    public Double getShichangdaoxiangd() {
+        return shichangdaoxiangd;
     }
 
-    public void setJixiaodaoxiangd(Double jixiaodaoxiangd) {
-        this.jixiaodaoxiangd = jixiaodaoxiangd;
+    public void setShichangdaoxiangd(Double shichangdaoxiangd) {
+        this.shichangdaoxiangd = shichangdaoxiangd;
     }
 
-    public Double getGuanxijianli() {
-        return guanxijianli;
+    public Double getGoutongxietiao() {
+        return goutongxietiao;
     }
 
-    public void setGuanxijianli(Double guanxijianli) {
-        this.guanxijianli = guanxijianli;
+    public void setGoutongxietiao(Double goutongxietiao) {
+        this.goutongxietiao = goutongxietiao;
     }
 
-    public Double getGuanxijianliyoushibiaoji() {
-        return guanxijianliyoushibiaoji;
+    public Double getGoutongxietiaoyoushibiaoji() {
+        return goutongxietiaoyoushibiaoji;
     }
 
-    public void setGuanxijianliyoushibiaoji(Double guanxijianliyoushibiaoji) {
-        this.guanxijianliyoushibiaoji = guanxijianliyoushibiaoji;
+    public void setGoutongxietiaoyoushibiaoji(Double goutongxietiaoyoushibiaoji) {
+        this.goutongxietiaoyoushibiaoji = goutongxietiaoyoushibiaoji;
     }
 
-    public Double getGuanxijianlidaifazhanbiaoji() {
-        return guanxijianlidaifazhanbiaoji;
+    public Double getGoutongxietiaodaifazhanbiaoji() {
+        return goutongxietiaodaifazhanbiaoji;
     }
 
-    public void setGuanxijianlidaifazhanbiaoji(Double guanxijianlidaifazhanbiaoji) {
-        this.guanxijianlidaifazhanbiaoji = guanxijianlidaifazhanbiaoji;
+    public void setGoutongxietiaodaifazhanbiaoji(Double goutongxietiaodaifazhanbiaoji) {
+        this.goutongxietiaodaifazhanbiaoji = goutongxietiaodaifazhanbiaoji;
     }
 
-    public Double getGuanxijianlia() {
-        return guanxijianlia;
+    public Double getGoutongxietiaoa() {
+        return goutongxietiaoa;
     }
 
-    public void setGuanxijianlia(Double guanxijianlia) {
-        this.guanxijianlia = guanxijianlia;
+    public void setGoutongxietiaoa(Double goutongxietiaoa) {
+        this.goutongxietiaoa = goutongxietiaoa;
     }
 
-    public Double getGuanxijianlib() {
-        return guanxijianlib;
+    public Double getGoutongxietiaob() {
+        return goutongxietiaob;
     }
 
-    public void setGuanxijianlib(Double guanxijianlib) {
-        this.guanxijianlib = guanxijianlib;
+    public void setGoutongxietiaob(Double goutongxietiaob) {
+        this.goutongxietiaob = goutongxietiaob;
     }
 
-    public Double getGuanxijianlic() {
-        return guanxijianlic;
+    public Double getGoutongxietiaoc() {
+        return goutongxietiaoc;
     }
 
-    public void setGuanxijianlic(Double guanxijianlic) {
-        this.guanxijianlic = guanxijianlic;
+    public void setGoutongxietiaoc(Double goutongxietiaoc) {
+        this.goutongxietiaoc = goutongxietiaoc;
     }
 
-    public Double getGuanxijianlid() {
-        return guanxijianlid;
+    public Double getGoutongxietiaod() {
+        return goutongxietiaod;
     }
 
-    public void setGuanxijianlid(Double guanxijianlid) {
-        this.guanxijianlid = guanxijianlid;
+    public void setGoutongxietiaod(Double goutongxietiaod) {
+        this.goutongxietiaod = goutongxietiaod;
     }
 
-    public Double getZiyuanzhenghe() {
-        return ziyuanzhenghe;
+    public Double getQianyanzhuizong() {
+        return qianyanzhuizong;
     }
 
-    public void setZiyuanzhenghe(Double ziyuanzhenghe) {
-        this.ziyuanzhenghe = ziyuanzhenghe;
+    public void setQianyanzhuizong(Double qianyanzhuizong) {
+        this.qianyanzhuizong = qianyanzhuizong;
     }
 
-    public Double getZiyuanzhengheyoushibiaoji() {
-        return ziyuanzhengheyoushibiaoji;
+    public Double getQianyanzhuizongyoushibiaoji() {
+        return qianyanzhuizongyoushibiaoji;
     }
 
-    public void setZiyuanzhengheyoushibiaoji(Double ziyuanzhengheyoushibiaoji) {
-        this.ziyuanzhengheyoushibiaoji = ziyuanzhengheyoushibiaoji;
+    public void setQianyanzhuizongyoushibiaoji(Double qianyanzhuizongyoushibiaoji) {
+        this.qianyanzhuizongyoushibiaoji = qianyanzhuizongyoushibiaoji;
     }
 
-    public Double getZiyuanzhenghedaifazhanbiaoji() {
-        return ziyuanzhenghedaifazhanbiaoji;
+    public Double getQianyanzhuizongdaifazhanbiaoji() {
+        return qianyanzhuizongdaifazhanbiaoji;
     }
 
-    public void setZiyuanzhenghedaifazhanbiaoji(Double ziyuanzhenghedaifazhanbiaoji) {
-        this.ziyuanzhenghedaifazhanbiaoji = ziyuanzhenghedaifazhanbiaoji;
+    public void setQianyanzhuizongdaifazhanbiaoji(Double qianyanzhuizongdaifazhanbiaoji) {
+        this.qianyanzhuizongdaifazhanbiaoji = qianyanzhuizongdaifazhanbiaoji;
     }
 
-    public Double getZiyuanzhenghea() {
-        return ziyuanzhenghea;
+    public Double getQianyanzhuizonga() {
+        return qianyanzhuizonga;
     }
 
-    public void setZiyuanzhenghea(Double ziyuanzhenghea) {
-        this.ziyuanzhenghea = ziyuanzhenghea;
+    public void setQianyanzhuizonga(Double qianyanzhuizonga) {
+        this.qianyanzhuizonga = qianyanzhuizonga;
     }
 
-    public Double getZiyuanzhengheb() {
-        return ziyuanzhengheb;
+    public Double getQianyanzhuizongb() {
+        return qianyanzhuizongb;
     }
 
-    public void setZiyuanzhengheb(Double ziyuanzhengheb) {
-        this.ziyuanzhengheb = ziyuanzhengheb;
+    public void setQianyanzhuizongb(Double qianyanzhuizongb) {
+        this.qianyanzhuizongb = qianyanzhuizongb;
     }
 
-    public Double getZiyuanzhenghec() {
-        return ziyuanzhenghec;
+    public Double getQianyanzhuizongc() {
+        return qianyanzhuizongc;
     }
 
-    public void setZiyuanzhenghec(Double ziyuanzhenghec) {
-        this.ziyuanzhenghec = ziyuanzhenghec;
+    public void setQianyanzhuizongc(Double qianyanzhuizongc) {
+        this.qianyanzhuizongc = qianyanzhuizongc;
     }
 
-    public Double getZiyuanzhenghed() {
-        return ziyuanzhenghed;
+    public Double getQianyanzhuizongd() {
+        return qianyanzhuizongd;
     }
 
-    public void setZiyuanzhenghed(Double ziyuanzhenghed) {
-        this.ziyuanzhenghed = ziyuanzhenghed;
+    public void setQianyanzhuizongd(Double qianyanzhuizongd) {
+        this.qianyanzhuizongd = qianyanzhuizongd;
     }
 
-    public Double getXingdongli() {
-        return xingdongli;
+    public Double getXitongsiwei() {
+        return xitongsiwei;
     }
 
-    public void setXingdongli(Double xingdongli) {
-        this.xingdongli = xingdongli;
+    public void setXitongsiwei(Double xitongsiwei) {
+        this.xitongsiwei = xitongsiwei;
     }
 
-    public Double getXingdongliyoushibiaoji() {
-        return xingdongliyoushibiaoji;
+    public Double getXitongsiweiyoushibiaoji() {
+        return xitongsiweiyoushibiaoji;
     }
 
-    public void setXingdongliyoushibiaoji(Double xingdongliyoushibiaoji) {
-        this.xingdongliyoushibiaoji = xingdongliyoushibiaoji;
+    public void setXitongsiweiyoushibiaoji(Double xitongsiweiyoushibiaoji) {
+        this.xitongsiweiyoushibiaoji = xitongsiweiyoushibiaoji;
     }
 
-    public Double getXingdonglidaifazhanbiaoji() {
-        return xingdonglidaifazhanbiaoji;
+    public Double getXitongsiweidaifazhanbiaoji() {
+        return xitongsiweidaifazhanbiaoji;
     }
 
-    public void setXingdonglidaifazhanbiaoji(Double xingdonglidaifazhanbiaoji) {
-        this.xingdonglidaifazhanbiaoji = xingdonglidaifazhanbiaoji;
+    public void setXitongsiweidaifazhanbiaoji(Double xitongsiweidaifazhanbiaoji) {
+        this.xitongsiweidaifazhanbiaoji = xitongsiweidaifazhanbiaoji;
     }
 
-    public Double getXingdonglia() {
-        return xingdonglia;
+    public Double getXitongsiweia() {
+        return xitongsiweia;
     }
 
-    public void setXingdonglia(Double xingdonglia) {
-        this.xingdonglia = xingdonglia;
+    public void setXitongsiweia(Double xitongsiweia) {
+        this.xitongsiweia = xitongsiweia;
     }
 
-    public Double getXingdonglib() {
-        return xingdonglib;
+    public Double getXitongsiweib() {
+        return xitongsiweib;
     }
 
-    public void setXingdonglib(Double xingdonglib) {
-        this.xingdonglib = xingdonglib;
+    public void setXitongsiweib(Double xitongsiweib) {
+        this.xitongsiweib = xitongsiweib;
     }
 
-    public Double getXingdonglic() {
-        return xingdonglic;
+    public Double getXitongsiweic() {
+        return xitongsiweic;
     }
 
-    public void setXingdonglic(Double xingdonglic) {
-        this.xingdonglic = xingdonglic;
+    public void setXitongsiweic(Double xitongsiweic) {
+        this.xitongsiweic = xitongsiweic;
     }
 
-    public Double getXingdonglid() {
-        return xingdonglid;
+    public Double getXitongsiweid() {
+        return xitongsiweid;
     }
 
-    public void setXingdonglid(Double xingdonglid) {
-        this.xingdonglid = xingdonglid;
+    public void setXitongsiweid(Double xitongsiweid) {
+        this.xitongsiweid = xitongsiweid;
     }
 
     public Double getZhidaoyujiankong() {
@@ -919,6 +941,94 @@ public class FirstLineManager extends BaseBean{
         this.shengrenliRanking = shengrenliRanking;
     }
 
+    public Double getJingyeAverage() {
+        return jingyeAverage;
+    }
+
+    public void setJingyeAverage(Double jingyeAverage) {
+        this.jingyeAverage = jingyeAverage;
+    }
+
+    public Double getZhixingAverage() {
+        return zhixingAverage;
+    }
+
+    public void setZhixingAverage(Double zhixingAverage) {
+        this.zhixingAverage = zhixingAverage;
+    }
+
+    public Double getKehuweizhongxinAverage() {
+        return kehuweizhongxinAverage;
+    }
+
+    public void setKehuweizhongxinAverage(Double kehuweizhongxinAverage) {
+        this.kehuweizhongxinAverage = kehuweizhongxinAverage;
+    }
+
+    public Double getZhiduyishiAverage() {
+        return zhiduyishiAverage;
+    }
+
+    public void setZhiduyishiAverage(Double zhiduyishiAverage) {
+        this.zhiduyishiAverage = zhiduyishiAverage;
+    }
+
+    public Double getShichangdaoxiangAverage() {
+        return shichangdaoxiangAverage;
+    }
+
+    public void setShichangdaoxiangAverage(Double shichangdaoxiangAverage) {
+        this.shichangdaoxiangAverage = shichangdaoxiangAverage;
+    }
+
+    public Double getGoutongxietiaoAverage() {
+        return goutongxietiaoAverage;
+    }
+
+    public void setGoutongxietiaoAverage(Double goutongxietiaoAverage) {
+        this.goutongxietiaoAverage = goutongxietiaoAverage;
+    }
+
+    public Double getQianyanzhuizongAverage() {
+        return qianyanzhuizongAverage;
+    }
+
+    public void setQianyanzhuizongAverage(Double qianyanzhuizongAverage) {
+        this.qianyanzhuizongAverage = qianyanzhuizongAverage;
+    }
+
+    public Double getXitongsiweiAverage() {
+        return xitongsiweiAverage;
+    }
+
+    public void setXitongsiweiAverage(Double xitongsiweiAverage) {
+        this.xitongsiweiAverage = xitongsiweiAverage;
+    }
+
+    public Double getZhidaoyujiankongAverage() {
+        return zhidaoyujiankongAverage;
+    }
+
+    public void setZhidaoyujiankongAverage(Double zhidaoyujiankongAverage) {
+        this.zhidaoyujiankongAverage = zhidaoyujiankongAverage;
+    }
+
+    public Double getJiliAverage() {
+        return jiliAverage;
+    }
+
+    public void setJiliAverage(Double jiliAverage) {
+        this.jiliAverage = jiliAverage;
+    }
+
+    public Integer getSequence() {
+        return sequence;
+    }
+
+    public void setSequence(Integer sequence) {
+        this.sequence = sequence;
+    }
+
     @Override
     public String toString() {
         return "FirstLineManager{" +
@@ -969,34 +1079,34 @@ public class FirstLineManager extends BaseBean{
                 ", zhiduyishib=" + zhiduyishib +
                 ", zhiduyishic=" + zhiduyishic +
                 ", zhiduyishid=" + zhiduyishid +
-                ", jixiaodaoxiang=" + jixiaodaoxiang +
-                ", jixiaodaoxiangyoushibiaoji=" + jixiaodaoxiangyoushibiaoji +
-                ", jixiaodaoxiangdaifazhanbiaoji=" + jixiaodaoxiangdaifazhanbiaoji +
-                ", jixiaodaoxianga=" + jixiaodaoxianga +
-                ", jixiaodaoxiangb=" + jixiaodaoxiangb +
-                ", jixiaodaoxiangc=" + jixiaodaoxiangc +
-                ", jixiaodaoxiangd=" + jixiaodaoxiangd +
-                ", guanxijianli=" + guanxijianli +
-                ", guanxijianliyoushibiaoji=" + guanxijianliyoushibiaoji +
-                ", guanxijianlidaifazhanbiaoji=" + guanxijianlidaifazhanbiaoji +
-                ", guanxijianlia=" + guanxijianlia +
-                ", guanxijianlib=" + guanxijianlib +
-                ", guanxijianlic=" + guanxijianlic +
-                ", guanxijianlid=" + guanxijianlid +
-                ", ziyuanzhenghe=" + ziyuanzhenghe +
-                ", ziyuanzhengheyoushibiaoji=" + ziyuanzhengheyoushibiaoji +
-                ", ziyuanzhenghedaifazhanbiaoji=" + ziyuanzhenghedaifazhanbiaoji +
-                ", ziyuanzhenghea=" + ziyuanzhenghea +
-                ", ziyuanzhengheb=" + ziyuanzhengheb +
-                ", ziyuanzhenghec=" + ziyuanzhenghec +
-                ", ziyuanzhenghed=" + ziyuanzhenghed +
-                ", xingdongli=" + xingdongli +
-                ", xingdongliyoushibiaoji=" + xingdongliyoushibiaoji +
-                ", xingdonglidaifazhanbiaoji=" + xingdonglidaifazhanbiaoji +
-                ", xingdonglia=" + xingdonglia +
-                ", xingdonglib=" + xingdonglib +
-                ", xingdonglic=" + xingdonglic +
-                ", xingdonglid=" + xingdonglid +
+                ", shichangdaoxiang=" + shichangdaoxiang +
+                ", shichangdaoxiangyoushibiaoji=" + shichangdaoxiangyoushibiaoji +
+                ", shichangdaoxiangdaifazhanbiaoji=" + shichangdaoxiangdaifazhanbiaoji +
+                ", shichangdaoxianga=" + shichangdaoxianga +
+                ", shichangdaoxiangb=" + shichangdaoxiangb +
+                ", shichangdaoxiangc=" + shichangdaoxiangc +
+                ", shichangdaoxiangd=" + shichangdaoxiangd +
+                ", goutongxietiao=" + goutongxietiao +
+                ", goutongxietiaoyoushibiaoji=" + goutongxietiaoyoushibiaoji +
+                ", goutongxietiaodaifazhanbiaoji=" + goutongxietiaodaifazhanbiaoji +
+                ", goutongxietiaoa=" + goutongxietiaoa +
+                ", goutongxietiaob=" + goutongxietiaob +
+                ", goutongxietiaoc=" + goutongxietiaoc +
+                ", goutongxietiaod=" + goutongxietiaod +
+                ", qianyanzhuizong=" + qianyanzhuizong +
+                ", qianyanzhuizongyoushibiaoji=" + qianyanzhuizongyoushibiaoji +
+                ", qianyanzhuizongdaifazhanbiaoji=" + qianyanzhuizongdaifazhanbiaoji +
+                ", qianyanzhuizonga=" + qianyanzhuizonga +
+                ", qianyanzhuizongb=" + qianyanzhuizongb +
+                ", qianyanzhuizongc=" + qianyanzhuizongc +
+                ", qianyanzhuizongd=" + qianyanzhuizongd +
+                ", xitongsiwei=" + xitongsiwei +
+                ", xitongsiweiyoushibiaoji=" + xitongsiweiyoushibiaoji +
+                ", xitongsiweidaifazhanbiaoji=" + xitongsiweidaifazhanbiaoji +
+                ", xitongsiweia=" + xitongsiweia +
+                ", xitongsiweib=" + xitongsiweib +
+                ", xitongsiweic=" + xitongsiweic +
+                ", xitongsiweid=" + xitongsiweid +
                 ", zhidaoyujiankong=" + zhidaoyujiankong +
                 ", zhidaoyujiankongyoushibiaoji=" + zhidaoyujiankongyoushibiaoji +
                 ", zhidaoyujiankongfazhanbiaoji=" + zhidaoyujiankongfazhanbiaoji +
@@ -1013,6 +1123,17 @@ public class FirstLineManager extends BaseBean{
                 ", jilid=" + jilid +
                 ", shengrenliScore=" + shengrenliScore +
                 ", shengrenliRanking=" + shengrenliRanking +
+                ", jingyeAverage=" + jingyeAverage +
+                ", zhixingAverage=" + zhixingAverage +
+                ", kehuweizhongxinAverage=" + kehuweizhongxinAverage +
+                ", zhiduyishiAverage=" + zhiduyishiAverage +
+                ", shichangdaoxiangAverage=" + shichangdaoxiangAverage +
+                ", goutongxietiaoAverage=" + goutongxietiaoAverage +
+                ", qianyanzhuizongAverage=" + qianyanzhuizongAverage +
+                ", xitongsiweiAverage=" + xitongsiweiAverage +
+                ", zhidaoyujiankongAverage=" + zhidaoyujiankongAverage +
+                ", jiliAverage=" + jiliAverage +
+                ", sequence=" + sequence +
                 '}';
     }
 }

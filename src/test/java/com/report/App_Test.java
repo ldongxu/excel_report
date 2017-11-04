@@ -22,15 +22,29 @@ import java.util.Map;
 public class App_Test {
 
     @Test
+    public void test() throws FileNotFoundException {
+        File f = new File("/Users/liudongxu/Documents/人员测评报告系统开发-华夏基石/财务序列-修改.xlsx");
+        InputStream inputStream= new FileInputStream(f);
+
+        ExcelLogs logs =new ExcelLogs();
+        Collection<Map> importExcel = ExcelUtil.importExcel(Map.class, 0,inputStream, "yyyy-MM-dd HH:mm:ss", logs , 0);
+
+        for(Map m : importExcel){
+            System.out.println(m);
+        }
+    }
+
+    @Test
     public void testImportStaff() throws IllegalAccessException, InstantiationException, ClassNotFoundException, FileNotFoundException {
 
-        File f=new File("/Users/liudongxu/Documents/人员测评报告系统开发-华夏基石/四个报告数据填充模板.xlsx");
+        File f=new File("/Users/liudongxu/Documents/人员测评报告系统开发-华夏基石/测评最终数据/个人报告—产品策划序列1.xlsx");
         InputStream inputStream= new FileInputStream(f);
 
         ExcelLogs logs =new ExcelLogs();
         Collection<Staff> importExcel = ExcelUtil.importExcel(Staff.class, 0,inputStream, "yyyy-MM-dd HH:mm:ss", logs , 0);
 
         for(Staff m : importExcel){
+            m.setSequence(1);
             System.out.println(m);
         }
 
@@ -81,8 +95,6 @@ public class App_Test {
 
     }
 
-    @Test
-    private void test(){
 
-    }
+
 }
