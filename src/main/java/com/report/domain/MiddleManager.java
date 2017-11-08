@@ -116,19 +116,19 @@ public class MiddleManager extends BaseBean{
     @ExcelCell(index = 54)
     private Double shichangdaoxiangd;
     @ExcelCell(index = 55)
-    private Double toutongxietiao;
+    private Double goutongxietiao;
     @ExcelCell(index = 56)
-    private Double toutongxietiaoyoushibiaoji;
+    private Double goutongxietiaoyoushibiaoji;
     @ExcelCell(index = 57)
-    private Double toutongxietiaodaifazhanbiaoji;
+    private Double goutongxietiaodaifazhanbiaoji;
     @ExcelCell(index = 58)
-    private Double toutongxietiaoa;
+    private Double goutongxietiaoa;
     @ExcelCell(index = 59)
-    private Double toutongxietiaob;
+    private Double goutongxietiaob;
     @ExcelCell(index = 60)
-    private Double toutongxietiaoc;
+    private Double goutongxietiaoc;
     @ExcelCell(index = 61)
-    private Double toutongxietiaod;
+    private Double goutongxietiaod;
     @ExcelCell(index = 62)
     private Double qianyanzhuizong;
     @ExcelCell(index = 63)
@@ -172,19 +172,19 @@ public class MiddleManager extends BaseBean{
     @ExcelCell(index = 82)
     private Double peiyangtarend;
     @ExcelCell(index = 83)
-    private Double goutongxietiao;
+    private Double toutongxietiao;
     @ExcelCell(index = 84)
-    private Double goutongxietiaoyoushibiaoji;
+    private Double toutongxietiaoyoushibiaoji;
     @ExcelCell(index = 85)
-    private Double goutongxietiaodaifazhanbiaoji;
+    private Double toutongxietiaodaifazhanbiaoji;
     @ExcelCell(index = 86)
-    private Double goutongxietiaoa;
+    private Double toutongxietiaoa;
     @ExcelCell(index = 87)
-    private Double goutongxietiaob;
+    private Double toutongxietiaob;
     @ExcelCell(index = 88)
-    private Double goutongxietiaoc;
+    private Double toutongxietiaoc;
     @ExcelCell(index = 89)
-    private Double goutongxietiaod;
+    private Double toutongxietiaod;
     @ExcelCell(index = 90)
     private Double zhidugoujianyouhua;
     @ExcelCell(index = 91)
@@ -228,7 +228,7 @@ public class MiddleManager extends BaseBean{
     @ExcelCell(index = 110)
     private Double shichangdaoxiangAverage;
     @ExcelCell(index = 111)
-    private Double toutongxietiaoAverage;
+    private Double goutongxietiaoAverage;
     @ExcelCell(index = 112)
     private Double qianyanzhuizongAverage;
     @ExcelCell(index = 113)
@@ -236,7 +236,7 @@ public class MiddleManager extends BaseBean{
     @ExcelCell(index = 114)
     private Double peiyangtarenAverage;
     @ExcelCell(index = 115)
-    private Double goutongxietiaoAverage;
+    private Double toutongxietiaoAverage;
     @ExcelCell(index = 116)
     private Double zhidugoujianyuyouhuaAverage;
     @ExcelCell(index = 117)
