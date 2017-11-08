@@ -6,6 +6,7 @@ import com.report.domain.FirstLineManager;
 import com.report.domain.MiddleManager;
 import com.report.domain.ReserveCadres;
 import com.report.domain.Staff;
+import com.report.model.Constants;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -37,7 +38,7 @@ public class App_Test {
     @Test
     public void testImportStaff() throws IllegalAccessException, InstantiationException, ClassNotFoundException, FileNotFoundException {
 
-        File f=new File("/Users/liudongxu/Documents/人员测评报告系统开发-华夏基石/测评最终数据/个人报告—产品策划序列1.xlsx");
+        File f=new File(Constants.technology);
         InputStream inputStream= new FileInputStream(f);
 
         ExcelLogs logs =new ExcelLogs();
@@ -53,7 +54,7 @@ public class App_Test {
     @Test
     public void testImportFirstLine() throws IllegalAccessException, InstantiationException, ClassNotFoundException, FileNotFoundException {
 
-        File f=new File("/Users/liudongxu/Documents/人员测评报告系统开发-华夏基石/四个报告数据填充模板.xlsx");
+        File f=new File(Constants.technology);
         InputStream inputStream= new FileInputStream(f);
 
         ExcelLogs logs =new ExcelLogs();
@@ -68,7 +69,7 @@ public class App_Test {
     @Test
     public void testImportMiddle() throws IllegalAccessException, InstantiationException, ClassNotFoundException, FileNotFoundException {
 
-        File f=new File("/Users/liudongxu/Documents/人员测评报告系统开发-华夏基石/四个报告数据填充模板.xlsx");
+        File f=new File(Constants.technology);
         InputStream inputStream= new FileInputStream(f);
 
         ExcelLogs logs =new ExcelLogs();
@@ -83,7 +84,7 @@ public class App_Test {
     @Test
     public void testImportReserveCadres() throws IllegalAccessException, InstantiationException, ClassNotFoundException, FileNotFoundException {
 
-        File f=new File("/Users/liudongxu/Documents/人员测评报告系统开发-华夏基石/四个报告数据填充模板.xlsx");
+        File f=new File(Constants.reserve_cadres);
         InputStream inputStream= new FileInputStream(f);
 
         ExcelLogs logs =new ExcelLogs();

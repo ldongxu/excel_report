@@ -64,151 +64,151 @@ public class FirstLineManager extends BaseBean{
     private Double zhixing;
     @ExcelCell(index = 28)
     private Double zhixingyoushibiaoji;
-    @ExcelCell(index = 33)
-    private Double zhixingdaifazhanbiaoji;
     @ExcelCell(index = 29)
-    private Double zhixinga;
+    private Double zhixingdaifazhanbiaoji;
     @ExcelCell(index = 30)
-    private Double zhixingb;
+    private Double zhixinga;
     @ExcelCell(index = 31)
-    private Double zhixingc;
+    private Double zhixingb;
     @ExcelCell(index = 32)
-    private Double zhixingd;
+    private Double zhixingc;
     @ExcelCell(index = 33)
-    private Double kehudaoxiang;
+    private Double zhixingd;
     @ExcelCell(index = 34)
-    private Double kehudaoxiangysbj;
+    private Double kehudaoxiang;
     @ExcelCell(index = 35)
-    private Double kehudaoxiangdfzbj;
+    private Double kehudaoxiangysbj;
     @ExcelCell(index = 36)
-    private Double kehudaoxianga;
+    private Double kehudaoxiangdfzbj;
     @ExcelCell(index = 37)
-    private Double kehudaoxiangb;
+    private Double kehudaoxianga;
     @ExcelCell(index = 38)
-    private Double kehudaoxiangc;
+    private Double kehudaoxiangb;
     @ExcelCell(index = 39)
-    private Double kehudaoxiangd;
+    private Double kehudaoxiangc;
     @ExcelCell(index = 40)
-    private Double zhiduyishi;
+    private Double kehudaoxiangd;
     @ExcelCell(index = 41)
-    private Double zhiduyishiyoushibiaoji;
+    private Double zhiduyishi;
     @ExcelCell(index = 42)
-    private Double zhiduyishidaifazhanbiaoji;
+    private Double zhiduyishiyoushibiaoji;
     @ExcelCell(index = 43)
-    private Double zhiduyishia;
+    private Double zhiduyishidaifazhanbiaoji;
     @ExcelCell(index = 44)
-    private Double zhiduyishib;
+    private Double zhiduyishia;
     @ExcelCell(index = 45)
-    private Double zhiduyishic;
+    private Double zhiduyishib;
     @ExcelCell(index = 46)
-    private Double zhiduyishid;
+    private Double zhiduyishic;
     @ExcelCell(index = 47)
-    private Double shichangdaoxiang;
+    private Double zhiduyishid;
     @ExcelCell(index = 48)
-    private Double shichangdaoxiangyoushibiaoji;
+    private Double shichangdaoxiang;
     @ExcelCell(index = 49)
-    private Double shichangdaoxiangdaifazhanbiaoji;
+    private Double shichangdaoxiangyoushibiaoji;
     @ExcelCell(index = 50)
-    private Double shichangdaoxianga;
+    private Double shichangdaoxiangdaifazhanbiaoji;
     @ExcelCell(index = 51)
-    private Double shichangdaoxiangb;
+    private Double shichangdaoxianga;
     @ExcelCell(index = 52)
-    private Double shichangdaoxiangc;
+    private Double shichangdaoxiangb;
     @ExcelCell(index = 53)
-    private Double shichangdaoxiangd;
+    private Double shichangdaoxiangc;
     @ExcelCell(index = 54)
-    private Double goutongxietiao;
+    private Double shichangdaoxiangd;
     @ExcelCell(index = 55)
-    private Double goutongxietiaoyoushibiaoji;
+    private Double goutongxietiao;
     @ExcelCell(index = 56)
-    private Double goutongxietiaodaifazhanbiaoji;
+    private Double goutongxietiaoyoushibiaoji;
     @ExcelCell(index = 57)
-    private Double goutongxietiaoa;
+    private Double goutongxietiaodaifazhanbiaoji;
     @ExcelCell(index = 58)
-    private Double goutongxietiaob;
+    private Double goutongxietiaoa;
     @ExcelCell(index = 59)
-    private Double goutongxietiaoc;
+    private Double goutongxietiaob;
     @ExcelCell(index = 60)
-    private Double goutongxietiaod;
+    private Double goutongxietiaoc;
     @ExcelCell(index = 61)
-    private Double qianyanzhuizong;
+    private Double goutongxietiaod;
     @ExcelCell(index = 62)
-    private Double qianyanzhuizongyoushibiaoji;
+    private Double qianyanzhuizong;
     @ExcelCell(index = 63)
-    private Double qianyanzhuizongdaifazhanbiaoji;
+    private Double qianyanzhuizongyoushibiaoji;
     @ExcelCell(index = 64)
-    private Double qianyanzhuizonga;
+    private Double qianyanzhuizongdaifazhanbiaoji;
     @ExcelCell(index = 65)
-    private Double qianyanzhuizongb;
+    private Double qianyanzhuizonga;
     @ExcelCell(index = 66)
-    private Double qianyanzhuizongc;
+    private Double qianyanzhuizongb;
     @ExcelCell(index = 67)
-    private Double qianyanzhuizongd;
+    private Double qianyanzhuizongc;
     @ExcelCell(index = 68)
-    private Double xitongsiwei;
+    private Double qianyanzhuizongd;
     @ExcelCell(index = 69)
-    private Double xitongsiweiyoushibiaoji;
+    private Double xitongsiwei;
     @ExcelCell(index = 70)
-    private Double xitongsiweidaifazhanbiaoji;
+    private Double xitongsiweiyoushibiaoji;
     @ExcelCell(index = 71)
-    private Double xitongsiweia;
+    private Double xitongsiweidaifazhanbiaoji;
     @ExcelCell(index = 72)
-    private Double xitongsiweib;
+    private Double xitongsiweia;
     @ExcelCell(index = 73)
-    private Double xitongsiweic;
+    private Double xitongsiweib;
     @ExcelCell(index = 74)
-    private Double xitongsiweid;
+    private Double xitongsiweic;
     @ExcelCell(index = 75)
-    private Double zhidaoyujiankong;
+    private Double xitongsiweid;
     @ExcelCell(index = 76)
-    private Double zhidaoyujiankongyoushibiaoji;
+    private Double zhidaoyujiankong;
     @ExcelCell(index = 77)
-    private Double zhidaoyujiankongfazhanbiaoji;
+    private Double zhidaoyujiankongyoushibiaoji;
     @ExcelCell(index = 78)
-    private Double zhidaoyujiankonga;
+    private Double zhidaoyujiankongfazhanbiaoji;
     @ExcelCell(index = 79)
-    private Double zhidaoyujiankongb;
+    private Double zhidaoyujiankonga;
     @ExcelCell(index = 80)
-    private Double zhidaoyujiankongc;
+    private Double zhidaoyujiankongb;
     @ExcelCell(index = 81)
-    private Double zhidaoyujiankongd;
+    private Double zhidaoyujiankongc;
     @ExcelCell(index = 82)
-    private Double jili;
+    private Double zhidaoyujiankongd;
     @ExcelCell(index = 83)
-    private Double jiliyoushibiaoji;
+    private Double jili;
     @ExcelCell(index = 84)
-    private Double jilidaifazhanbiaoji;
+    private Double jiliyoushibiaoji;
     @ExcelCell(index = 85)
-    private Double jilia;
+    private Double jilidaifazhanbiaoji;
     @ExcelCell(index = 86)
-    private Double jilib;
+    private Double jilia;
     @ExcelCell(index = 87)
-    private Double jilic;
+    private Double jilib;
     @ExcelCell(index = 88)
-    private Double jilid;
+    private Double jilic;
     @ExcelCell(index = 89)
-    private Double shengrenliScore;
+    private Double jilid;
     @ExcelCell(index = 90)
-    private Double shengrenliRanking;//胜任力基层管理排名
+    private Double shengrenliScore;
     @ExcelCell(index = 91)
-    private Double jingyeAverage;
+    private Double shengrenliRanking;//胜任力基层管理排名
     @ExcelCell(index = 92)
-    private Double zhixingAverage;
+    private Double jingyeAverage;
     @ExcelCell(index = 93)
-    private Double kehuweizhongxinAverage;
+    private Double zhixingAverage;
     @ExcelCell(index = 94)
-    private Double zhiduyishiAverage;
+    private Double kehuweizhongxinAverage;
     @ExcelCell(index = 95)
-    private Double shichangdaoxiangAverage;
+    private Double zhiduyishiAverage;
     @ExcelCell(index = 96)
-    private Double goutongxietiaoAverage;
+    private Double shichangdaoxiangAverage;
     @ExcelCell(index = 97)
-    private Double qianyanzhuizongAverage;
+    private Double goutongxietiaoAverage;
     @ExcelCell(index = 98)
-    private Double xitongsiweiAverage;
+    private Double qianyanzhuizongAverage;
     @ExcelCell(index = 99)
-    private Double zhidaoyujiankongAverage;
+    private Double xitongsiweiAverage;
     @ExcelCell(index = 100)
+    private Double zhidaoyujiankongAverage;
+    @ExcelCell(index = 101)
     private Double jiliAverage;
 
     private Integer sequence;//人员序列
