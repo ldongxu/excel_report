@@ -1,5 +1,6 @@
 package com.report.service;
 
+import com.report.common.utils.ExcelLog;
 import com.report.common.utils.ExcelLogs;
 import com.report.common.utils.ExcelUtil;
 import com.report.domain.FirstLineManager;
@@ -15,6 +16,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by 刘东旭 on 2017/10/26.
@@ -34,6 +36,12 @@ public class ImportService {
             m.setSequence(sequence);
             System.out.println(m);
         }
+        if (logs.getHasError()){
+            List<ExcelLog> list= logs.getErrorLogList();
+            for (ExcelLog log:list){
+                System.out.println(log.getRowNum()+":"+log.getLog());
+            }
+        }
         mongoOperations.insert(staffs, Staff.class);
     }
 
@@ -47,6 +55,12 @@ public class ImportService {
         for (FirstLineManager firstLineManager : firstLineManagers) {
             firstLineManager.setSequence(sequence);
             System.out.println(firstLineManager);
+        }
+        if (logs.getHasError()){
+            List<ExcelLog> list= logs.getErrorLogList();
+            for (ExcelLog log:list){
+                System.out.println(log.getRowNum()+":"+log.getLog());
+            }
         }
         mongoOperations.insert(firstLineManagers, FirstLineManager.class);
     }
@@ -63,6 +77,12 @@ public class ImportService {
             m.setSequence(sequence);
             System.out.println(m);
         }
+        if (logs.getHasError()){
+           List<ExcelLog> list= logs.getErrorLogList();
+           for (ExcelLog log:list){
+               System.out.println(log.getRowNum()+":"+log.getLog());
+           }
+        }
         mongoOperations.insert(importExcel, MiddleManager.class);
 
     }
@@ -77,6 +97,12 @@ public class ImportService {
 
         for (ReserveCadres m : importExcel) {
             System.out.println(m);
+        }
+        if (logs.getHasError()){
+            List<ExcelLog> list= logs.getErrorLogList();
+            for (ExcelLog log:list){
+                System.out.println(log.getRowNum()+":"+log.getLog());
+            }
         }
         mongoOperations.insert(importExcel, ReserveCadres.class);
 
