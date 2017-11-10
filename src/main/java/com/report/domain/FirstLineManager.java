@@ -195,7 +195,7 @@ public class FirstLineManager extends BaseBean{
     @ExcelCell(index = 93)
     private Double zhixingAverage;
     @ExcelCell(index = 94)
-    private Double kehuweizhongxinAverage;
+    private Double kehudaoxiangAverage;
     @ExcelCell(index = 95)
     private Double zhiduyishiAverage;
     @ExcelCell(index = 96)
@@ -957,12 +957,12 @@ public class FirstLineManager extends BaseBean{
         this.zhixingAverage = zhixingAverage;
     }
 
-    public Double getKehuweizhongxinAverage() {
-        return kehuweizhongxinAverage;
+    public Double getKehudaoxiangAverage() {
+        return kehudaoxiangAverage;
     }
 
-    public void setKehuweizhongxinAverage(Double kehuweizhongxinAverage) {
-        this.kehuweizhongxinAverage = kehuweizhongxinAverage;
+    public void setKehudaoxiangAverage(Double kehudaoxiangAverage) {
+        this.kehudaoxiangAverage = kehudaoxiangAverage;
     }
 
     public Double getZhiduyishiAverage() {
@@ -1125,7 +1125,7 @@ public class FirstLineManager extends BaseBean{
                 ", shengrenliRanking=" + shengrenliRanking +
                 ", jingyeAverage=" + jingyeAverage +
                 ", zhixingAverage=" + zhixingAverage +
-                ", kehuweizhongxinAverage=" + kehuweizhongxinAverage +
+                ", kehudaoxiangAverage=" + kehudaoxiangAverage +
                 ", zhiduyishiAverage=" + zhiduyishiAverage +
                 ", shichangdaoxiangAverage=" + shichangdaoxiangAverage +
                 ", goutongxietiaoAverage=" + goutongxietiaoAverage +
